@@ -7,14 +7,9 @@ body {
 }
 
 
-/* slider budget */
-
-#ex1Slider .slider-selection {
-    background: #BABABA;
-}
-
 /* Checkboxen Wochentage */
+
 .checkbox {
-  padding: inherit;
-  margin-left: auto;
+    padding: inherit;
+    margin-left: auto;
 }
