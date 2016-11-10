@@ -18,18 +18,30 @@
 	<div class="container">
 		<div class="row row-centered">
 			<div class="col-md-12">
-				<h1>Allegra!</h1>
+				<h1>Wer soll dabei sein?</h1>
 			</div>
-			<div class="row row-centered">
-				<div class="col-md-4">
-					<img src="#" alt="Bild Kind">
-				</div>
-				<div class="col-md-4">
-					<img src="#" alt="Bild Erwachsener">
-				</div>
-				<div class="col-md-4">
-					<img src="#" alt="Bild Senior">
-				</div>
+		</div>
+		<div class="row row-centered">
+			<div class="col-md-4">
+				<img src="http://image.flaticon.com/icons/svg/43/43241.svg" alt="Bild Kind" width="200px">
+			</div>
+			<div class="col-md-4">
+				<img src="http://image.flaticon.com/icons/png/512/10/10522.png" alt="Bild Erwachsener" width="200px">
+			</div>
+			<div class="col-md-4">
+				<img src="http://image.flaticon.com/icons/png/512/27/27445.png" alt="Bild Senior" width="200px">
+			</div>
+		</div>
+		<div class="row row-centered">
+			<div class="col-md-4">
+				<input type="number">
+			</div>
+			<div class="col-md-4">
+				<input type="number">
+			</div>
+			<div class="col-md-4">
+				<input type="number">
+			</div>
 		</div>
 	</div>
 
