@@ -5,6 +5,9 @@ h1 {
 body {
     text-align: center;
 }
+button {
+	margin-top: 50px;	
+}
 
 .text_input {
     width: 50%;

@@ -6,16 +6,22 @@
 ?>
     <!DOCTYPE html>
     <html>
-
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Willkommen</title>
     </head>
-
     <body>
         <div class="container">
+ 		<div class="row row-centered">
+			<div class="col-md-12">
+				<!--Fortschrittsleiste-->
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+				</div>
+			</div>
+		</div>
 			<div class="row row-centered">
 				<div class="col-md-12">
 					<h1>Budget</h1>

@@ -16,6 +16,14 @@
 	<div class="container">
 		<div class="row row-centered">
 			<div class="col-md-12">
+				<!--Fortschrittsleiste-->
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row row-centered">
+			<div class="col-md-12">
 				<h1>Auf was für eine Aktivität haben sie Lust</h1>
 			</div>
 		</div>
