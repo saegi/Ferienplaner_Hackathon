@@ -18,9 +18,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                    <h1>Ihre Angaben:</h1>
+                    <br>
                     <div class="left">
-                        <h1>Ihre Angaben:</h1>
-                        <br>
                         <p>Wochentag:</p>
 
                         <p>Kategorie:</p>
