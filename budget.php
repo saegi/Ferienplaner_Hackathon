@@ -18,6 +18,24 @@
         <div class="container">
             <div class="row row-centered">
                 <div class="col-md-12">
+                    <div class="text_input">
+                        <p>Wo liegt bei dir die Schmerzensgrenze für ein Ticket?</p>
+                        <input type="range" name="zahlen" id="regler" min="0" max="500" value="0" step="5" onchange="showValue(this.value), wechsel()" />
+
+                        <span id="kosten">0</span>
+                        <script type="text/javascript">
+                            function showValue(newValue) {
+                                document.getElementById("kosten").innerHTML = newValue;
+                            }
+                        </script>
+
+                        <article id="kosten_rechts">
+                            <p>CHF</p>
+
+                        </article>
+                    </div>
+                    <br>
+                    <br>
                 </div>
             </div>
         </div>
