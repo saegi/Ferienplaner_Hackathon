@@ -16,6 +16,14 @@
 	<div class="container">
 		<div class="row row-centered">
 			<div class="col-md-12">
+				<!--Fortschrittsleiste-->
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row row-centered">
+			<div class="col-md-12">
 				<h1>An welchen Wochentagen soll die Aktivität stattfinden?</h1>
 			</div>
 		</div>
@@ -57,10 +65,7 @@
 			</div>
 		</div>
 	</div>
-		<div class="progress">
-		  <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-		</div>
-</div>
+	
 
 
 
