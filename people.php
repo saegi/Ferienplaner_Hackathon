@@ -19,8 +19,17 @@
 		<div class="row row-centered">
 			<div class="col-md-12">
 				<h1>Allegra!</h1>
-				<button type="button" class="btn btn-default">Links</button>
 			</div>
+			<div class="row row-centered">
+				<div class="col-md-4">
+					<img src="#" alt="Kind">Bild Kind
+				</div>
+				<div class="col-md-4">
+					<img src="#" alt="Erwachsener">Bild Erwachsener
+				</div>
+				<div class="col-md-4">
+				<img src="#" alt="Senior">Bild Senior
+				</div>
 		</div>
 	</div>
 
