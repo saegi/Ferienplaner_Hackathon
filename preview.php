@@ -17,16 +17,18 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-md-12" class="left">
-                    <h1>Ihre Angaben:</h1>
-                    <br>
-                    <p>Wochentag:</p>
+                <div class="col-md-12">
+                    <div class="left">
+                        <h1>Ihre Angaben:</h1>
+                        <br>
+                        <p>Wochentag:</p>
 
-                    <p>Kategorie:</p>
+                        <p>Kategorie:</p>
 
-                    <p>Budget:</p>
+                        <p>Budget:</p>
 
-                    <p>Personen:</p>
+                        <p>Personen:</p>
+                    </div>
 
                     <button type="button" class="btn btn-default">Aktivität planen!</button>
                 </div>
