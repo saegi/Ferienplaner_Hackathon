@@ -18,12 +18,10 @@
         <div class="container">
             <div class="row row-centered">
                 <div class="col-md-12">
-                    <div id="slider"></div>
                 </div>
             </div>
         </div>
 
-        <input data-addui='slider' data-formatter='usd' data-fontsize='14' data-step='0.01' data-min='0' data-max='1000' value='10' />
 
         <!--jquery-->
         <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -34,8 +32,8 @@
         <!-- bootstrap.min.js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-        <!-- eigenes js -->
-        <script src="js/js.js"></script>
+        <!-- eigenes js 
+        <script src="js/js.js"></script> -->
 
         <!--eigenes css-->
         <link rel="stylesheet" href="css/css.css" stylesheet.css "">
