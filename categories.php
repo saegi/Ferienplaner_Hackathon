@@ -20,7 +20,7 @@
 				<button type="button" class="btn btn-default">Weiter</button>
 			</div>
 		</div>
-	 <div class="row row-centered">
+	<div class="row row-centered">
 		<div class="col-md-12">
 				<label class="Form-label--tick">
 				  <input type="checkbox" class="checkbox" value="1" name="SomeCheckbox" class="Form-label-checkbox">
@@ -42,8 +42,8 @@
 					<input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
 					<span class="Form-label-text">Unterhaltung</span>
 				</label>
-			<div>
-		<div>
+		 </div>
+	</div>
 		<div class="row row-centered">
 			<div class="col-md-12">
 				<button type="button" class="btn btn-default">Weiter</button>
