@@ -4,6 +4,8 @@
     session_destroy();
 
 ?>
+
+    <!DOCTYPE html>
     <html>
 
     <head>
@@ -18,7 +20,7 @@
     <body>
         <div class="container">
             <div class="row row-centered">
-                <div class="col-md-12">
+                <div class="col-md-12 centered">
                     <input id="ex8" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14" />
                 </div>
             </div>
