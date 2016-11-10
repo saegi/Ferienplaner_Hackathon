@@ -17,7 +17,7 @@
     <body>
         <div class="container">
             <div class="row row-centered">
-                <div class="col-md-12 centered">
+                <div class="col-md-12">
                     <div class="text_input">
                         <p>Maximales Budget pro Person</p>
                         <input type="range" name="zahlen" id="regler" min="0" max="100" value="0" step="5" onchange="showValue(this.value), wechsel()" />
