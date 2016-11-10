@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row row-centered">
                 <div class="col-md-12">
-                    <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14" />
+                    <input data-addui='slider' data-formatter='usd' data-fontsize='14' data-step='0.01' data-min='0' data-max='1000' value='10' />
                 </div>
             </div>
         </div>
