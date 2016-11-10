@@ -23,31 +23,31 @@
 	<div class="row row-centered">
 	 <div class="col-md-12">
 		<label class="Form-label--tick">
-			  <input type="checkbox" value="1" name="SomeCheckbox" class="Form-label-checkbox">
+			  <input type="checkbox" value="1" name="Mo">
 			  <span class="Form-label-text">Mo</span>
 			</label>
 			<label class="Form-label--tick">
-			  <input type="checkbox" value="2" name="SomeCheckbox" class="Form-label-checkbox">
+			  <input type="checkbox" value="2" name="Di">
 			  <span class="Form-label-text">Di</span>
 			</label>
 			<label class="Form-label--tick">
-			  <input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
+			  <input type="checkbox" value="3" name="Mi">
 			  <span class="Form-label-text">Mi</span>
 			</label>
 			<label class="Form-label--tick">
-				<input type="checkbox" value="4" name="SomeCheckbox" class="Form-label-checkbox">
+				<input type="checkbox" value="4" name="Do">
 				<span class="Form-label-text">Do</span>
 			</label>
 			<label class="Form-label--tick">
-				<input type="checkbox" value="5" name="SomeCheckbox" class="Form-label-checkbox">
+				<input type="checkbox" value="5" name="Fr">
 				<span class="Form-label-text">Fr</span>
 			</label>
 			<label class="Form-label--tick">
-				<input type="checkbox" value="6" name="SomeCheckbox" class="Form-label-checkbox">
+				<input type="checkbox" value="6" name="Sa">
 				<span class="Form-label-text">Sa</span>
 			</label>
 			<label class="Form-label--tick">
-				<input type="checkbox" value="7" name="SomeCheckbox" class="Form-label-checkbox">
+				<input type="checkbox" value="7" name="So">
 				<span class="Form-label-text">So</span>
 			</label>
 		</div>
@@ -61,35 +61,9 @@
 			</div>
 		</div>
 
-		<div class="btn-group">
-	   <button type="button" class="btn btn-primary">Mo</button>
-	   <button type="button" class="btn btn-primary">Di</button>
-	   <button type="button" class="btn btn-primary">Mi</button>
-		 <button type="button" class="btn btn-primary">Do</button>
-		 <button type="button" class="btn btn-primary">Fr</button>
-		 <button type="button" class="btn btn-primary">Sa</button>
-		 <button type="button" class="btn btn-primary">So</button>
-	 </div>
 
 
-	 <div class="text_input">
-					 <p>Wo liegt bei dir die Schmerzensgrenze für ein Ticket?</p>
-							 <input type="range" name="zahlen" id="regler" min="0" max="500" value="0" step="5"                                                                                 onchange="showValue(this.value), wechsel()" />
 
-							 <span id="kosten">0</span>
-							 <script type="text/javascript">
-									 function showValue(newValue)
-													 {
-									 document.getElementById("kosten").innerHTML=newValue;
-													 }
-									 </script>
-
-									 <article id="kosten_rechts">
-											 <p>CHF</p>
-
-									 </article>
-		 </div>
-				<br><br>
 
     <!--jquery-->
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -103,9 +77,7 @@
     <!--eigenes css-->
     <link rel="stylesheet" href="css/css.css"stylesheet.css"">
 
-		<!-- Wochentagebuttons-->
-		<link rel="stylesheet" href="dist/check-radio.css">
-		<link rel="stylesheet" href="font-awesome.min.css">
+
 </body>
 
 </html>
