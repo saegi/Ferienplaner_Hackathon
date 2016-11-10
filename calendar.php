@@ -61,6 +61,35 @@
 			</div>
 		</div>
 
+		<div class="btn-group">
+	   <button type="button" class="btn btn-primary">Mo</button>
+	   <button type="button" class="btn btn-primary">Di</button>
+	   <button type="button" class="btn btn-primary">Mi</button>
+		 <button type="button" class="btn btn-primary">Do</button>
+		 <button type="button" class="btn btn-primary">Fr</button>
+		 <button type="button" class="btn btn-primary">Sa</button>
+		 <button type="button" class="btn btn-primary">So</button>
+	 </div>
+
+
+	 <div class="text_input">
+					 <p>Wo liegt bei dir die Schmerzensgrenze für ein Ticket?</p>
+							 <input type="range" name="zahlen" id="regler" min="0" max="500" value="0" step="5"                                                                                 onchange="showValue(this.value), wechsel()" />
+
+							 <span id="kosten">0</span>
+							 <script type="text/javascript">
+									 function showValue(newValue)
+													 {
+									 document.getElementById("kosten").innerHTML=newValue;
+													 }
+									 </script>
+
+									 <article id="kosten_rechts">
+											 <p>CHF</p>
+
+									 </article>
+		 </div>
+				<br><br>
 
     <!--jquery-->
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
