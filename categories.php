@@ -21,24 +21,24 @@
 		</div>
 	<div class="row row-centered">
 		<div class="col-md-12">
-			<label class="Form-label--tick">
-			  <input type="checkbox" class="checkbox" value="1" name="SomeCheckbox" class="Form-label-checkbox">
+			<label>
+			  <input type="checkbox" value="1" name="natur">
 			  <span class="Form-label-text">Natur</span>
 			</label>
-			<label class="Form-label--tick">
-			  <input type="checkbox" value="2" name="SomeCheckbox" class="Form-label-checkbox">
+			<label>
+			  <input type="checkbox" value="2" name="sport">
 			  <span class="Form-label-text">Sport</span>
 			</label>
-			<label class="Form-label--tick">
-			  <input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
+			<label>
+			  <input type="checkbox" value="3" name="Wellness">
 			  <span class="Form-label-text">Wellness</span>
 			</label>
-			<label class="Form-label--tick">
-				<input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
+			<label>
+				<input type="checkbox" value="3" name="Kultur">
 				<span class="Form-label-text">Kultur</span>
 			</label>
-			<label class="Form-label--tick">
-				<input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
+			<label>
+				<input type="checkbox" value="3" name="Unterhaltung">
 				<span class="Form-label-text">Unterhaltung</span>
 			</label>
 		 </div>
@@ -61,9 +61,6 @@
     <!--eigenes css-->
     <link rel="stylesheet" href="css/css.css"stylesheet.css"">
 
-		<!-- Wochentagebuttons-->
-		<link rel="stylesheet" href="dist/check-radio.css">
-		<link rel="stylesheet" href="font-awesome.min.css">
 </body>
 
 </html>
