@@ -15,7 +15,7 @@
     </head>
 
     <body>
-        <div class="container">
+    <div class="container">
 			<div class="row row-centered">
 				<div class="col-md-12">
 					<!--Fortschrittsleiste-->
