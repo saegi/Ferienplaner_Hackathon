@@ -20,35 +20,38 @@
 			</div>
 		</div>
 	</div>
-
-	<label class="Form-label--tick">
-		  <input type="checkbox" class="Checkbox" value="1" name="SomeCheckbox" class="Form-label-checkbox">
-		  <span class="Form-label-text">Mo</span>
-		</label>
+	<div class="row row-centered">
+	 <div class="col-md-12">
 		<label class="Form-label--tick">
-		  <input type="checkbox" value="2" name="SomeCheckbox" class="Form-label-checkbox">
-		  <span class="Form-label-text">Di</span>
-		</label>
-		<label class="Form-label--tick">
-		  <input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
-		  <span class="Form-label-text">Mi</span>
-		</label>
-		<label class="Form-label--tick">
-			<input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
-			<span class="Form-label-text">Do</span>
-		</label>
-		<label class="Form-label--tick">
-			<input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
-			<span class="Form-label-text">Fr</span>
-		</label>
-		<label class="Form-label--tick">
-			<input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
-			<span class="Form-label-text">Sa</span>
-		</label>
-		<label class="Form-label--tick">
-			<input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
-			<span class="Form-label-text">So</span>
-		</label>
+			  <input type="checkbox" value="1" name="SomeCheckbox" class="Form-label-checkbox">
+			  <span class="Form-label-text">Mo</span>
+			</label>
+			<label class="Form-label--tick">
+			  <input type="checkbox" value="2" name="SomeCheckbox" class="Form-label-checkbox">
+			  <span class="Form-label-text">Di</span>
+			</label>
+			<label class="Form-label--tick">
+			  <input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
+			  <span class="Form-label-text">Mi</span>
+			</label>
+			<label class="Form-label--tick">
+				<input type="checkbox" value="4" name="SomeCheckbox" class="Form-label-checkbox">
+				<span class="Form-label-text">Do</span>
+			</label>
+			<label class="Form-label--tick">
+				<input type="checkbox" value="5" name="SomeCheckbox" class="Form-label-checkbox">
+				<span class="Form-label-text">Fr</span>
+			</label>
+			<label class="Form-label--tick">
+				<input type="checkbox" value="6" name="SomeCheckbox" class="Form-label-checkbox">
+				<span class="Form-label-text">Sa</span>
+			</label>
+			<label class="Form-label--tick">
+				<input type="checkbox" value="7" name="SomeCheckbox" class="Form-label-checkbox">
+				<span class="Form-label-text">So</span>
+			</label>
+		</div>
+	</div>
 
 		<div class="container">
 			<div class="row row-centered">
