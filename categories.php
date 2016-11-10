@@ -19,35 +19,41 @@
 				<h1>Auf was für eine Aktivität haben sie Lust</h1>
 			</div>
 		</div>
-	<div class="row row-centered">
-		<div class="col-md-12">
-			<label>
-			  <input type="checkbox" value="1" name="natur">
-			  <b>Natur</b>
-			</label>
-			<label>
-			  <input type="checkbox" value="2" name="sport">
-			  <b>Sport</b>
-			</label>
-			<label>
-			  <input type="checkbox" value="3" name="Wellness">
-			  <b>Wellness</b>
-			</label>
-			<label>
-				<input type="checkbox" value="3" name="Kultur">
-				<b>Kultur</b>
-			</label>
-			<label>
-				<input type="checkbox" value="3" name="Unterhaltung">
-				<b>Unterhaltung</b>
-			</label>
-		 </div>
-	</div>
-	<div class="row row-centered">
-		<div class="col-md-12">
-			<button type="button" class="btn btn-default">Weiter</button>
+		<div class="row row-centered">
+			<div class="col-md-12">
+				<label>
+				  <input type="checkbox" value="1" name="natur">
+				  <b>Natur</b>
+				</label>
+				<label>
+				  <input type="checkbox" value="2" name="sport">
+				  <b>Sport</b>
+				</label>
+				<label>
+				  <input type="checkbox" value="3" name="Wellness">
+				  <b>Wellness</b>
+				</label>
+				<label>
+					<input type="checkbox" value="3" name="Kultur">
+					<b>Kultur</b>
+				</label>
+				<label>
+					<input type="checkbox" value="3" name="Unterhaltung">
+					<b>Unterhaltung</b>
+				</label>
+			 </div>
 		</div>
-	</div>
+		<div class="row row-centered">
+			<div class="col-md-4">
+				<button type="button" class="btn btn-default">Zurück</button>
+			</div>
+			<div class="col-md-4">
+				<button type="button" class="btn btn-default">Home</button>
+			</div>
+			<div class="col-md-4">
+				<button type="button" class="btn btn-default">Weiter</button>
+			</div>
+		</div>
 	</div>
     <!--jquery-->
 	<script src="http://code.jquery.com/jquery-latest.js"></script>

@@ -25,10 +25,7 @@
 			</div>
 		</div>
 		<div class="row row-centered">
-			<div class="col-md-6">
-				<button type="button" class="btn btn-default">Zurück</button>
-			</div>
-			<div class="col-md-6">
+			<div class="col-md-12">
 				<button type="button" class="btn btn-default">Weiter</button>
 			</div>
 		</div>

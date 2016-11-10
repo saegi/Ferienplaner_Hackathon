@@ -33,10 +33,19 @@
                         <p>Personen:</p>
                         <h2>2 Senioren, 3 Kinder</h2>
                     </div>
-
-                    <button type="button" class="btn btn-default">Aktivität planen!</button>
                 </div>
             </div>
+			<div class="row row-centered">
+				<div class="col-md-4">
+					<button type="button" class="btn btn-default">Zurück</button>
+				</div>
+				<div class="col-md-4">
+					<button type="button" class="btn btn-default">Home</button>
+				</div>
+				<div class="col-md-4">
+					<button type="button" class="btn btn-default">Aktivität planen!</button>
+				</div>
+			</div>
         </div>
 
         <!--jquery-->
