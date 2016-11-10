@@ -27,8 +27,8 @@
                         <p>Kategorie:</p>
                         <h2>Natur</h2>
                         <br>
-                        <p>Budget pro Person:</p>35 CHF
-                        <h2></h2>
+                        <p>Budget pro Person:</p>
+                        <h2>35 CHF</h2>
                         <br>
                         <p>Personen:</p>
                         <h2>2 Senioren, 3 Kinder</h2>
