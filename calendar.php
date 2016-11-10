@@ -17,7 +17,6 @@
 		<div class="row row-centered">
 			<div class="col-md-12">
 				<h1>An welchen Wochentagen soll die Aktivität stattfinden?</h1>
-				<button type="button" class="btn btn-default">Weiter</button>
 			</div>
 		</div>
 	</div>
@@ -50,6 +49,14 @@
 			<input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
 			<span class="Form-label-text">So</span>
 		</label>
+
+		<div class="container">
+			<div class="row row-centered">
+				<div class="col-md-12">
+					<button type="button" class="btn btn-default">Weiter</button>
+				</div>
+			</div>
+		</div>
 
 
     <!--jquery-->
