@@ -22,13 +22,13 @@
 			</div>
 			<div class="row row-centered">
 				<div class="col-md-4">
-					<img src="#" alt="Kind">Bild Kind
+					<img src="#" alt="Bild Kind">
 				</div>
 				<div class="col-md-4">
-					<img src="#" alt="Erwachsener">Bild Erwachsener
+					<img src="#" alt="Bild Erwachsener">
 				</div>
 				<div class="col-md-4">
-				<img src="#" alt="Senior">Bild Senior
+					<img src="#" alt="Bild Senior">
 				</div>
 		</div>
 	</div>
