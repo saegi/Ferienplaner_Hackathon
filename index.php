@@ -12,8 +12,6 @@
 
     <!--Guguus-->
 
-    <!--Das ist ein Kommentar-->
-
 
 
 
