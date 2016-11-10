@@ -17,7 +17,25 @@
     <body>
         <div class="container">
             <div class="row row-centered">
-                <div class="col-md-12">
+                <div class="col-md-6 centered">
+                    <div class="text_input">
+                        <p>Maximales Budget pro Person</p>
+                        <input type="range" name="zahlen" id="regler" min="0" max="100" value="0" step="5" onchange="showValue(this.value), wechsel()" />
+
+                        <span id="kosten">0</span>
+                        <script type="text/javascript">
+                            function showValue(newValue) {
+                                document.getElementById("kosten").innerHTML = newValue;
+                            }
+                        </script>
+
+                        <article id="kosten_rechts">
+                            <p>CHF</p>
+
+                        </article>
+                    </div>
+                    <br>
+                    <br>
                 </div>
             </div>
         </div>
@@ -32,8 +50,8 @@
         <!-- bootstrap.min.js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-        <!-- eigenes js 
-        <script src="js/js.js"></script> -->
+        <!-- eigenes js -->
+        <script src="js/js.js"></script>
 
         <!--eigenes css-->
         <link rel="stylesheet" href="css/css.css" stylesheet.css "">
