@@ -22,12 +22,16 @@
                     <br>
                     <div class="left">
                         <p>Wochentag:</p>
-
+                        <h2>Mo,Do</h2>
+                        <br>
                         <p>Kategorie:</p>
-
-                        <p>Budget:</p>
-
+                        <h2>Natur</h2>
+                        <br>
+                        <p>Budget pro Person:</p>35 CHF
+                        <h2></h2>
+                        <br>
                         <p>Personen:</p>
+                        <h2>2 Senioren, 3 Kinder</h2>
                     </div>
 
                     <button type="button" class="btn btn-default">Aktivität planen!</button>
