@@ -32,8 +32,8 @@
         <!-- bootstrap.min.js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-        <!-- eigenes js -->
-        <script src="js/js.js"></script>
+        <!-- eigenes js 
+        <script src="js/js.js"></script> -->
 
         <!--eigenes css-->
         <link rel="stylesheet" href="css/css.css" stylesheet.css "">
