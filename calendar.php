@@ -23,7 +23,7 @@
 	</div>
 
 	<label class="Form-label--tick">
-		  <input type="checkbox" value="1" name="SomeCheckbox" class="Form-label-checkbox">
+		  <input type="checkbox" class="Checkbox" value="1" name="SomeCheckbox" class="Form-label-checkbox">
 		  <span class="Form-label-text">Mo</span>
 		</label>
 		<label class="Form-label--tick">

@@ -12,3 +12,9 @@ body {
 #ex1Slider .slider-selection {
     background: #BABABA;
 }
+
+/* Checkboxen Wochentage */
+.checkbox {
+  padding: inherit;
+  margin-left: auto;
+}
