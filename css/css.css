@@ -1,11 +1,14 @@
-
-
-
 h1 {
-	text-align: center;
-	
+    text-align: center;
 }
 
 body {
-	text-align: center;
+    text-align: center;
+}
+
+
+/* slider budget */
+
+#ex1Slider .slider-selection {
+    background: #BABABA;
 }

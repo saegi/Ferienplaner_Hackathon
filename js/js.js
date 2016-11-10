@@ -1,5 +1,8 @@
 // JavaScript Document
 
-$("#ex8").slider({
-    tooltip: 'always'
+// With JQuery
+$('#ex1').slider({
+    formatter: function (value) {
+        return 'Current value: ' + value;
+    }
 });
