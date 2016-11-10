@@ -17,7 +17,11 @@
 		<div class="row row-centered">
 			<div class="col-md-12">
 				<h1>Allegra!</h1>
-				<button type="button" class="btn btn-default">Links</button>
+			</div>
+		</div>
+		<div class="row row-centered">
+			<div class="col-md-12">
+				<button type="button" class="btn btn-default">Weiter</button>
 			</div>
 		</div>
 	</div>
