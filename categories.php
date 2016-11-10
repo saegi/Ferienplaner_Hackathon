@@ -16,32 +16,40 @@
 	<div class="container">
 		<div class="row row-centered">
 			<div class="col-md-12">
-				<h1>Auf ws für eine Aktivität haben sie Lust</h1>
+				<h1>Auf was für eine Aktivität haben sie Lust</h1>
+				<button type="button" class="btn btn-default">Weiter</button>
+			</div>
+		</div>
+	 <div class="row row-centered">
+		<div class="col-md-12">
+				<label class="Form-label--tick">
+				  <input type="checkbox" class="checkbox" value="1" name="SomeCheckbox" class="Form-label-checkbox">
+				  <span class="Form-label-text">Natur</span>
+				</label>
+				<label class="Form-label--tick">
+				  <input type="checkbox" value="2" name="SomeCheckbox" class="Form-label-checkbox">
+				  <span class="Form-label-text">Sport</span>
+				</label>
+				<label class="Form-label--tick">
+				  <input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
+				  <span class="Form-label-text">Wellness</span>
+				</label>
+				<label class="Form-label--tick">
+					<input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
+					<span class="Form-label-text">Kultur</span>
+				</label>
+				<label class="Form-label--tick">
+					<input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
+					<span class="Form-label-text">Unterhaltung</span>
+				</label>
+			<div>
+		<div>
+		<div class="row row-centered">
+			<div class="col-md-12">
 				<button type="button" class="btn btn-default">Weiter</button>
 			</div>
 		</div>
 	</div>
-	<label class="Form-label--tick">
-		  <input type="checkbox" class="checkbox" value="1" name="SomeCheckbox" class="Form-label-checkbox">
-		  <span class="Form-label-text">Natur</span>
-		</label>
-		<label class="Form-label--tick">
-		  <input type="checkbox" value="2" name="SomeCheckbox" class="Form-label-checkbox">
-		  <span class="Form-label-text">Sport</span>
-		</label>
-		<label class="Form-label--tick">
-		  <input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
-		  <span class="Form-label-text">Wellness</span>
-		</label>
-		<label class="Form-label--tick">
-			<input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
-			<span class="Form-label-text">Kultur</span>
-		</label>
-		<label class="Form-label--tick">
-			<input type="checkbox" value="3" name="SomeCheckbox" class="Form-label-checkbox">
-			<span class="Form-label-text">Unterhaltung</span>
-		</label>
-
     <!--jquery-->
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 
