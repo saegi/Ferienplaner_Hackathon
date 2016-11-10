@@ -18,6 +18,7 @@
         <div class="container">
             <div class="row row-centered">
                 <div class="col-md-12">
+                    <div id="slider"></div>
                 </div>
             </div>
         </div>
