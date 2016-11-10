@@ -19,54 +19,48 @@
 				<h1>An welchen Wochentagen soll die Aktivität stattfinden?</h1>
 			</div>
 		</div>
-	</div>
-	<div class="row row-centered">
-	 <div class="col-md-12">
-		<label class="Form-label--tick">
-			  <input type="checkbox" value="1" name="Mo">
-			  <span class="Form-label-text">Mo</span>
-			</label>
-			<label class="Form-label--tick">
-			  <input type="checkbox" value="2" name="Di">
-			  <span class="Form-label-text">Di</span>
-			</label>
-			<label class="Form-label--tick">
-			  <input type="checkbox" value="3" name="Mi">
-			  <span class="Form-label-text">Mi</span>
-			</label>
-			<label class="Form-label--tick">
-				<input type="checkbox" value="4" name="Do">
-				<span class="Form-label-text">Do</span>
-			</label>
-			<label class="Form-label--tick">
-				<input type="checkbox" value="5" name="Fr">
-				<span class="Form-label-text">Fr</span>
-			</label>
-			<label class="Form-label--tick">
-				<input type="checkbox" value="6" name="Sa">
-				<span class="Form-label-text">Sa</span>
-			</label>
-			<label class="Form-label--tick">
-				<input type="checkbox" value="7" name="So">
-				<span class="Form-label-text">So</span>
-			</label>
-		</div>
-	</div>
-
-		<div class="container">
-			<div class="row row-centered">
-				<div class="col-md-12">
-					<button type="button" class="btn btn-default">Weiter</button>
-				</div>
+		<div class="row row-centered">
+		 <div class="col-md-12">
+				<label>
+					<input type="checkbox" value="1" name="Mo">
+					<b>Mo</b>
+				</label>
+				<label>
+					<input type="checkbox" value="2" name="Di">
+					<b>Di</b>
+				</label>
+				<label>
+					<input type="checkbox" value="3" name="Mi">
+					<b>Mi</b>
+				</label>
+				<label>
+					<input type="checkbox" value="4" name="Do">
+					<b>Do</b>
+				</label>
+				<label>
+					<input type="checkbox" value="5" name="Fr">
+					<b>Fr</b>
+				</label>
+				<label>
+					<input type="checkbox" value="6" name="Sa">
+					<b>Sa</b>
+				</label>
+				<label>
+					<input type="checkbox" value="7" name="So">
+					<b>So</b>
+				</label>
 			</div>
 		</div>
-
+		<div class="row row-centered">
+			<div class="col-md-12">
+				<button type="button" class="btn btn-default">Weiter</button>
+			</div>
+		</div>
+	</div>
 		<div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
-  </div>
+		  <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+		</div>
 </div>
-
-
 
 
 

@@ -23,23 +23,23 @@
 		<div class="col-md-12">
 			<label>
 			  <input type="checkbox" value="1" name="natur">
-			  <span class="Form-label-text">Natur</span>
+			  <b>Natur</b>
 			</label>
 			<label>
 			  <input type="checkbox" value="2" name="sport">
-			  <span class="Form-label-text">Sport</span>
+			  <b>Sport</b>
 			</label>
 			<label>
 			  <input type="checkbox" value="3" name="Wellness">
-			  <span class="Form-label-text">Wellness</span>
+			  <b>Wellness</b>
 			</label>
 			<label>
 				<input type="checkbox" value="3" name="Kultur">
-				<span class="Form-label-text">Kultur</span>
+				<b>Kultur</b>
 			</label>
 			<label>
 				<input type="checkbox" value="3" name="Unterhaltung">
-				<span class="Form-label-text">Unterhaltung</span>
+				<b>Unterhaltung</b>
 			</label>
 		 </div>
 	</div>
