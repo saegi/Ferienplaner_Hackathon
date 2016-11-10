@@ -14,8 +14,12 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Allegra!</h1>
-		<button type="button" class="btn btn-default">Links</button>
+		<div class="row row-centered">
+			<div class="col-md-12">
+				<h1>Allegra!</h1>
+				<button type="button" class="btn btn-default">Links</button>
+			</div>
+		</div>
 	</div>
 
 
