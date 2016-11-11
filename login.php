@@ -142,14 +142,20 @@
 					<a href="index.php" target="_self">
 					<button type="button" class="btn btn-default">Home</button>
 				</div>
+				<?php
+				if(isset($_SESSION['id'])) {?>
 				<div class="col-md-4">
 					<a href="profil.php" target="_self">
 					<button type="button" class="btn btn-default">Profil bearbeiten</button>
 				</div>
+				<?php } ?>
+				<?php
+				if(isset($_SESSION['id'])) {?>
 				<div class="col-md-4">
 					<a href="index.php" target="_self">
 					<button type="button" class="btn btn-default">Aktivitäten verwalten</button>
 				</div>
+				<?php } ?>
 			</div>
         </div>
   		<!-- Error NAchrichten Ausgeben -->
