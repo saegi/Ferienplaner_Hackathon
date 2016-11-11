@@ -32,13 +32,12 @@
                         <button type="button" class="btn btn-default">Weiter</button>
                 </div>
             </div>
-
-						<div class="row row-centered">
-								<div class="col-md-12">
-										<a href="login.php" target="_self">
-												<button type="button" class="btn btn-default">Login</button>
-								</div>
-						</div>
+			<div class="row row-centered">
+				<div class="col-md-12">
+					<a href="login.php" target="_self">
+						<button type="button" class="btn btn-default">Login</button>
+				</div>
+			</div>
         </div>
 
         <!--jquery-->
