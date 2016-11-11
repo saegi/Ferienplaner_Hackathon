@@ -33,9 +33,13 @@
                 </div>
             </div>
 			<div class="row row-centered">
-				<div class="col-md-12">
+				<div class="col-md-6">
 					<a href="login.php" target="_self">
 						<button type="button" class="btn btn-default">Login</button>
+				</div>
+				<div class="col-md-6">
+					<a href="profil.php" target="_self">
+						<button type="button" class="btn btn-default">Profil bearbeiten</button>
 				</div>
 			</div>
         </div>
