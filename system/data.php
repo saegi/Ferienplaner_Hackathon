@@ -25,6 +25,6 @@ function login($email, $password){
 }
 
 function register($username, $email, $password){
-  $sql = "INSERT INTO user (UserName, email, password) VALUES ('$username', '$email', '$password');";
+  $sql = "INSERT INTO User (UserName, email, password) VALUES ('$username', '$email', '$password');";
   return get_result ($sql);
 }

@@ -120,12 +120,12 @@
                         </div>
                         <div class="panel-heading">
                             <div class="row">
-                                <div class="col-xs-6 tabs">
+                                <div class="col-xs-3 tabs">
                                     <a href="#" class="active" id="login-form-link">
                                         <div class="login">EINLOGGEN</div>
                                     </a>
                                 </div>
-                                <div class="col-xs-6 tabs">
+                                <div class="col-xs-3 tabs">
                                     <a href="#" id="register-form-link">
                                         <div class="register">REGISTRIEREN</div>
                                     </a>
