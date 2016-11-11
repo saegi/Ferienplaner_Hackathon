@@ -120,12 +120,12 @@
                         </div>
                         <div class="panel-heading">
                             <div class="row">
-                                <div class="col-xs-3 tabs">
+                                <div class="col-xs-6 tabs">
                                     <a href="#" class="active" id="login-form-link">
                                         <div class="login">EINLOGGEN</div>
                                     </a>
                                 </div>
-                                <div class="col-xs-3 tabs">
+                                <div class="col-xs-6 tabs">
                                     <a href="#" id="register-form-link">
                                         <div class="register">REGISTRIEREN</div>
                                     </a>
@@ -135,6 +135,20 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+				<div class="col-md-4">
+					<a href="index.php" target="_self">
+					<button type="button" class="btn btn-default">Home</button>
+				</div>
+				<div class="col-md-4">
+					<a href="index.php" target="_self">
+					<button type="button" class="btn btn-default">Profil bearbeiten</button>
+				</div>
+				<div class="col-md-4">
+					<a href="index.php" target="_self">
+					<button type="button" class="btn btn-default">Aktivitäten verwalten</button>
+				</div>
+			</div>
         </div>
   		<!-- Error NAchrichten Ausgeben -->
        <?php
