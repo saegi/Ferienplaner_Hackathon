@@ -84,7 +84,7 @@
                                   <form id="login-form" action="#" method="post" role="form" style="display: block;">
                                       <h2>Profil bearbeiten</h2>
                                       <div class="form-group">
-                                          <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="<?php echo $email['email'];?>" value="">
+                                          <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="E-Mailadresse" value="">
                                           </div>
                                       <div class="form-group">
                                           <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Neuer Benutzername" value="">
