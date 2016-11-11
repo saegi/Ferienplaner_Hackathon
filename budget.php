@@ -54,7 +54,7 @@
                     <button type="button" class="btn btn-default">Zurück</button>
                 </div>
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-default">Home</button>
+                    <button href="index.php" type="button" class="btn btn-default">Home</button>
                 </div>
                 <div class="col-md-4">
                     <button type="button" class="btn btn-default">Weiter</button>
