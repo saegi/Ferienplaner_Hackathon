@@ -1,8 +1,10 @@
 <?php
 	session_start();
-    if(isset($_SESSION['id'])) unset($_SESSION['id']);
-    session_destroy();
-
+	  if(!isset($_SESSION['id'])){
+		session_destroy();
+	  }else{
+		$user_id = $_SESSION['id'];
+  }
 ?>
     <!DOCTYPE html>
     <html>
@@ -47,11 +49,6 @@
 						<button type="button" class="btn btn-default" id="profil">Profil bearbeiten</button>
 				</div>
 			</div>
-       <?php
-				if(isset($_SESSION['id'])) {?>
-					<p>Hallo User </p>
-					
-			<?php } ?>
         </div>
 
         <!--jquery--> 

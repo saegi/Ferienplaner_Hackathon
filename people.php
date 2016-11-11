@@ -71,6 +71,11 @@ session_start();
                 </div>
             </div>
         </div>
+        <?php
+				if(isset($_SESSION['id'])) {?>
+					<p>Hallo User </p>
+					
+			<?php } ?>
 
         <!--jquery-->
         <script src="http://code.jquery.com/jquery-latest.js"></script>
