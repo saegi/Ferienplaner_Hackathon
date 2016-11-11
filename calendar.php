@@ -71,8 +71,6 @@
 			</div>
 		</div>
 	</div>
-	
->>>>>>> Buttons
 
     <head>
         <meta charset="utf-8">
