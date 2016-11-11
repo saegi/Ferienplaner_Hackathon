@@ -29,4 +29,22 @@ function register($username, $email, $password){
   return get_result ($sql);
 }
 
-?>
+function get_user($id){
+	$sql = "SELECT * FROM User WHERE user_id = $id;";
+	return get_result ($sql);
+}
+
+function update_user($email){
+    $sql_ok = false;
+    $sql = "UPDATE user SET ";
+    if($email != ""){
+        $sql .= "email = '$email', ";
+        $sql_ok = true;
+	}
+
+	if($sql_ok){
+	  return get_result($sql);
+	}else{
+	  return false;
+	}
+}
