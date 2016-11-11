@@ -28,6 +28,11 @@
             </div>
             <div class="row row-centered">
                 <div class="col-md-12">
+                    <img src="https://www.graubuenden.ch/sites/default/files/content/steinbock-enavant-gian-giatgen-sommer-keyvisual.jpg" alt="Bild Erwachsener" width="50%">
+                </div>
+            </div>
+            <div class="row row-centered">
+                <div class="col-md-12">
                     <a href="calendar.php" target="_self">
                         <button type="button" class="btn btn-default">Weiter</button>
                 </div>
