@@ -16,14 +16,14 @@
 
     <body>
         <div class="container">
-			<div class="row row-centered">
-				<div class="col-md-12">
-					<!--Progress Bar-->
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
-					</div>
-				</div>
-			</div>
+            <div class="row row-centered">
+                <div class="col-md-12">
+                    <!--Progress Bar-->
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <h1>Ihre Angaben:</h1>
@@ -43,17 +43,19 @@
                     </div>
                 </div>
             </div>
-			<div class="row row-centered">
-				<div class="col-md-4">
-					<button type="button" class="btn btn-default">Zurück</button>
-				</div>
-				<div class="col-md-4">
-					<button type="button" class="btn btn-default">Home</button>
-				</div>
-				<div class="col-md-4">
-					<button type="button" class="btn btn-default">Aktivität planen!</button>
-				</div>
-			</div>
+            <div class="row row-centered">
+                <div class="col-md-4">
+                    <a href="budget.php" target="_self">
+                        <button type="button" class="btn btn-default">Zurück</button>
+                </div>
+                <div class="col-md-4">
+                    <a href="index.php" target="_self">
+                        <button type="button" class="btn btn-default">Home</button>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-default">Aktivität planen!</button>
+                </div>
+            </div>
         </div>
 
         <!--jquery-->
