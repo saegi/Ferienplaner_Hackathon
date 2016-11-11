@@ -17,17 +17,21 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h1>Ihre Aktivität</h1>
-                    <br>
-                    <div class="left">
-                        <p>Wird durch Datenbank ausgefüllt!</p>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="bilder/web/sourceonestuff.jpg" alt="source_website">
+                        <div class="caption">
+                            <h3>Alphorn Erlebnis</h3>
+                            <p>Source One ist eine Koordinationsfirma, die anderen Unternehmen hilft, sich in die Firmenwelt besser zu integrieren. Dies war unser erster internationaler Auftrag und Auftritt. Zum ersten Mal hat Swissmedi@ eine Webseite erstellt, die keine Bilder enthaltet. Dazu ist sie interaktiv, übersichtlich und modern eingerichtet.
+                            </p>
+                            <p><a href="http://www.sourceonestaff.com/" class="btn btn-primary" target="_blank" role="button">Speichern (nur eingelogt)</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row row-centered">
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-default">Speichern (nur eingelogt)</button>
+                    <button type="button" class="btn btn-default">Login</button>
                 </div>
                 <div class="col-md-4">
                     <a href="activity.php" target="_self">
@@ -36,12 +40,6 @@
                 <div class="col-md-4">
                     <a href="index.php" target="_self">
                         <button type="button" class="btn btn-default">Zurück auf Start</button>
-                </div>
-            </div>
-            <div class="row row-centered">
-                <div class="col-md-4">
-                    <a href="login.php" target="_self">
-                        <button type="button" class="btn btn-default">Login</button>
                 </div>
             </div>
         </div>
