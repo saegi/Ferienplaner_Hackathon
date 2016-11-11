@@ -53,7 +53,8 @@
                         <button type="button" class="btn btn-default">Home</button>
                 </div>
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-default">Aktivität planen!</button>
+                    <a href="activity.php" target="_self">
+                        <button type="button" class="btn btn-default">Aktivität planen!</button>
                 </div>
             </div>
         </div>

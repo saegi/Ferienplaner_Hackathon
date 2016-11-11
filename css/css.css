@@ -5,8 +5,9 @@ h1 {
 body {
     text-align: center;
 }
+
 button {
-	margin-top: 50px;	
+    margin-top: 50px;
 }
 
 .text_input {
@@ -18,7 +19,7 @@ button {
     text-align: left;
     margin-left: 20%
 }
+
 .progress {
-	margin-bottom: 10px;
-	
+    margin-bottom: 10px;
 }
