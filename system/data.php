@@ -12,7 +12,7 @@ function get_result($sql){
 	/*echo $sql;*/
 	$result = mysqli_query($db, $sql);
 	mysqli_close($db);
-	return $result;	
+	return $result;
 }
 
 /***********************/
@@ -27,4 +27,24 @@ function login($email, $password){
 function register($username, $email, $password){
   $sql = "INSERT INTO User (UserName, email, password) VALUES ('$username', '$email', '$password');";
   return get_result ($sql);
+}
+
+function get_user($id){
+	$sql = "SELECT * FROM User WHERE user_id = $id;";
+	return get_result ($sql);
+}
+
+function update_user($email){
+    $sql_ok = false;
+    $sql = "UPDATE user SET ";
+    if($email != ""){
+        $sql .= "email = '$email', ";
+        $sql_ok = true;
+	}
+
+	if($sql_ok){
+	  return get_result($sql);
+	}else{
+	  return false;
+	}
 }

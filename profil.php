@@ -84,11 +84,11 @@
                                   <form id="login-form" action="#" method="post" role="form" style="display: block;">
                                       <h2>Profil bearbeiten</h2>
                                       <div class="form-group">
-                                          <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Adresse" value="">
-                                      </div>
+                                          <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="<?php echo $email['email'];?>" value="">
+                                          </div>
                                       <div class="form-group">
                                           <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Neuer Benutzername" value="">
-                                      </div>
+                                        </div>
                                       <div class="form-group">
                                           <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Altes Passwort">
                                       </div>
@@ -99,6 +99,8 @@
                                           <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Speichern">
                                       </div>
                                   </form>
+
+                                </div>
                               </div>
                         </div>
                         <div class="panel-heading">
