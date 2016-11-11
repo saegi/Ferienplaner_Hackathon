@@ -42,21 +42,19 @@
 					<a href="login.php" target="_self">
 						<button type="button" class="btn btn-default">Login</button>
 				</div>
-				<?php
-				if(isset($_SESSION['id'])) {?>
-					<p>Hallu User </p>
-					
-			<?php	}
-				?>
 				<div class="col-md-6">
 					<a href="profil.php" target="_self">
 						<button type="button" class="btn btn-default" id="profil">Profil bearbeiten</button>
 				</div>
-				?>
 			</div>
+       <?php
+				if(isset($_SESSION['id'])) {?>
+					<p>Hallo User </p>
+					
+			<?php } ?>
         </div>
 
-        <!--jquery-->
+        <!--jquery--> 
         <script src="http://code.jquery.com/jquery-latest.js"></script>
 
         <!-- bootstrap.min.css -->
