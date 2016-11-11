@@ -81,29 +81,25 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form id="register-form" action="#" method="post" role="form" style="display: none;">
-                                        <h2>Profil bearbeiten</h2>
-                                        <div class="form-group">
-                                            <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Benutzername" value="">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Addresse" value="">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Passwort">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Passwort wiederholen">
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-sm-6 col-sm-offset-3">
-                                                    <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="speichern">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                                  <form id="login-form" action="#" method="post" role="form" style="display: block;">
+                                      <h2>Profil bearbeiten</h2>
+                                      <div class="form-group">
+                                          <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Adresse" value="">
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Neuer Benutzername" value="">
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Passwort">
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Neues Passwort bestätigen">
+                                      </div>
+                                      <div class="col-xs-6 form-group pull-right">
+                                          <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Speichern">
+                                      </div>
+                                  </form>
+                                  </div>
                             </div>
                         </div>
                         <div class="panel-heading">
