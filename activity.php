@@ -27,20 +27,20 @@
             </div>
             <div class="row row-centered">
                 <div class="col-md-4">
-                    <a href="budget.php" target="_self">
-                        <button type="button" class="btn btn-default">Speichern (nur eingelogt)</button>
+                    <button type="button" class="btn btn-default">Speichern (nur eingelogt)</button>
                 </div>
                 <div class="col-md-4">
-                    <a href="index.php" target="_self">
+                    <a href="activity.php" target="_self">
                         <button type="button" class="btn btn-default">Neue Aktivität</button>
                 </div>
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-default">Zurück auf Start</button>
+                    <a href="index.php" target="_self">
+                        <button type="button" class="btn btn-default">Zurück auf Start</button>
                 </div>
             </div>
             <div class="row row-centered">
                 <div class="col-md-4">
-                    <a href="budget.php" target="_self">
+                    <a href="login.php" target="_self">
                         <button type="button" class="btn btn-default">Login</button>
                 </div>
             </div>
