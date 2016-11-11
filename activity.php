@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="thumbnail">
+                    <div class="thumbnail" style="margin:0px auto">
                         <img src="bilder/web/sourceonestuff.jpg" alt="source_website">
                         <div class="caption">
                             <h3>Alphorn Erlebnis</h3>
