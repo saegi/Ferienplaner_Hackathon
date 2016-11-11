@@ -29,7 +29,7 @@ function register($username, $email, $password){
   return get_result ($sql);
 }
 
-function get_user($id){
+/*function get_user($id){
 	$sql = "SELECT * FROM User WHERE user_id = $id;";
 	return get_result ($sql);
 }
@@ -48,3 +48,4 @@ function update_user($email){
 	  return false;
 	}
 }
+*/
