@@ -1,7 +1,10 @@
 <?php
-	session_start();
-    if(isset($_SESSION['id'])) unset($_SESSION['id']);
-    session_destroy();
+session_start();
+  if(!isset($_SESSION['id'])){
+    header("Location:index.php");
+  }else{
+		$user_id = $_SESSION['id'];
+   }
 
 ?>
     <!DOCTYPE html>
