@@ -68,7 +68,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Einloggen</title>
+        <title>Profil bearbeiten</title>
     </head>
 
     <body>
@@ -81,18 +81,6 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form id="login-form" action="#" method="post" role="form" style="display: block;">
-                                        <h2>Einloggen</h2>
-                                        <div class="form-group">
-                                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Adresse" value="">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Passwort">
-                                        </div>
-                                        <div class="col-xs-6 form-group pull-right">
-                                            <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="speichern">
-                                        </div>
-                                    </form>
                                     <form id="register-form" action="#" method="post" role="form" style="display: none;">
                                         <h2>Profil bearbeiten</h2>
                                         <div class="form-group">
@@ -122,7 +110,7 @@
                             <div class="row">
                                 <div class="col-xs-6 tabs">
                                     <a href="#" id="register-form-link">
-                                        
+
                                     </a>
                                 </div>
                             </div>

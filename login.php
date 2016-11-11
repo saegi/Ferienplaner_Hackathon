@@ -1,4 +1,4 @@
-<?php 
+<?php
 	session_start();
     if(isset($_SESSION['id'])) unset($_SESSION['id']);
     session_destroy();
@@ -15,9 +15,9 @@
 		if(!empty($_POST['email']) && !empty($_POST['password'])){
 			$email = filter_data($_POST['email']);
 			$password = filter_data($_POST['password']);
-			
+
 			$result = login($email, $password);
-			
+
 			$row_count = mysqli_num_rows($result);
 
 			if($row_count == 1){
@@ -27,14 +27,14 @@
 				header("Location:index.php");
 			}else{
 				$error = true;
-				$error_msg .= "Leider konnte wir Ihre E-Mailadresse oder Ihr Passwort nicht finden.</br>";	
+				$error_msg .= "Leider konnte wir Ihre E-Mailadresse oder Ihr Passwort nicht finden.</br>";
 			}
 		}else{
 			$error = true;
 			$error_msg .= "Bitte füllen Sie beide Felder aus.</br>";
 		}
 	}
-	
+
 	if(isset($_POST['register-submit'])){
 		if(!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm-password'])){
 		    $username = $_POST['username'];
@@ -141,7 +141,7 @@
 					<button type="button" class="btn btn-default">Home</button>
 				</div>
 				<div class="col-md-4">
-					<a href="index.php" target="_self">
+					<a href="profil.php" target="_self">
 					<button type="button" class="btn btn-default">Profil bearbeiten</button>
 				</div>
 				<div class="col-md-4">
@@ -172,10 +172,10 @@
 
         <!-- bootstrap.min.js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        
+
         <!--eigenes js.js-->
 		<script src="js/js.js"></script>
-       
+
         <!--eigenes css-->
         <link rel="stylesheet" href="css/css.css" stylesheet.css "">
 
