@@ -26,7 +26,12 @@
 		</div>
 		<div class="row row-centered">
 			<div class="col-md-12">
-				<button type="button" class="btn btn-default">Weiter</button>
+				<button type="button" class="btn btn-default">Start</button>
+			</div>
+		</div>
+		<div class="row row-centered">
+			<div class="col-md-12">
+				<button type="button" class="btn btn-default">Login</button>
 			</div>
 		</div>
 	</div>
