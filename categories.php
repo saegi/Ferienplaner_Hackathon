@@ -6,6 +6,8 @@ session_start();
 		$user_id = $_SESSION['id'];
    }
 
+	$_SESSION['categories'] = $_POST['Natur'];
+	echo $_SESSION['categories'];l
 ?>
     <!DOCTYPE html>
     <html>
@@ -35,11 +37,11 @@ session_start();
             <div class="row row-centered">
                 <div class="col-md-12">
                     <label>
-                        <input type="checkbox" value="1" name="natur">
+                        <input type="checkbox" value="1" name="Natur">
                         <b>Natur</b>
                     </label>
                     <label>
-                        <input type="checkbox" value="2" name="sport">
+                        <input type="checkbox" value="2" name="Sport">
                         <b>Sport</b>
                     </label>
                     <label>
@@ -58,7 +60,7 @@ session_start();
             </div>
             <div class="row row-centered">
                 <div class="col-md-4">
-                    <a href="calendar.php" target="_self">
+                    <a href="categories.php?Natur=hello" target="_self">
                         <button type="button" class="btn btn-default">Zurück</button>
                 </div>
                 <div class="col-md-4">
