@@ -6,6 +6,7 @@ session_start();
 		$user_id = $_SESSION['id'];
    }
 ?>
+
     <!DOCTYPE html>
     <html>
 
@@ -156,6 +157,7 @@ session_start();
         <!--eigenes css-->
         <link rel="stylesheet" href="css/css.css" stylesheet.css "">
 
+        
 
     </body>
 
