@@ -5,6 +5,10 @@ session_start();
   }else{
 		$user_id = $_SESSION['id'];
    }
+
+	require_once('system/data.php');
+	require_once('system/security.php');
+
 ?>
 
     <!DOCTYPE html>
@@ -43,7 +47,6 @@ session_start();
                         <input type="checkbox" name="check_list[]" value="So">
                         <label>So</label>
                     </form>
-
                 </div>
             </div>
 

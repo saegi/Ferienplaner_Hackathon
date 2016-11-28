@@ -63,3 +63,10 @@ function update_user($email, $password, $confirm_password, $username, $user_id){
 	  return false;
 	}
 }
+/***********************/
+/* all.php
+/***********************/
+function checkbox () {
+	
+	
+}
