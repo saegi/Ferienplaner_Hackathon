@@ -54,7 +54,7 @@ function update_user($email, $password, $confirm_password, $username, $user_id){
 		$sql .= "username = '$username', ";
 		$sql_ok = true;
 	}
-	$sql = substr_replace($sql, ' ', -2, 1); 
+	$sql = substr_replace($sql, ' ', -2, 1);
 	$sql .= " WHERE user_id = $user_id ;";
 
 	if($sql_ok){
@@ -63,3 +63,17 @@ function update_user($email, $password, $confirm_password, $username, $user_id){
 	  return false;
 	}
 }
+
+/***********************/
+/* Days Berechnung */
+/***********************/
+
+$days = $_POST['days'];
+$wd = "("
+$n = 0;
+foreach($days as $day){
+if ($n > 0) $wd .= " OR ";
+  $wd .= " $day = 1 ";
+  $n ++
+}
+$wd .= ")"
