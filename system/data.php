@@ -63,6 +63,7 @@ function update_user($email, $password, $confirm_password, $username, $user_id){
 	  return false;
 	}
 }
+<<<<<<< HEAD
 
 /***********************/
 /* Days Berechnung */
@@ -77,3 +78,12 @@ if ($n > 0) $wd .= " OR ";
   $n ++
 }
 $wd .= ")"
+=======
+/***********************/
+/* all.php
+/***********************/
+function checkbox () {
+	
+	
+}
+>>>>>>> origin/master
