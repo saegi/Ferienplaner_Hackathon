@@ -95,15 +95,6 @@ session_start();
             <br>
             <hr>
             <br>
-
-            <div class="row row-centered">
-                <div class="col-md-12">
-                    <h1>Budget</h1>
-                </div>
-			</div>
-
-
-            <br>
             <hr>
             <br>
 
