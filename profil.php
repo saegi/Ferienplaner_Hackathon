@@ -6,9 +6,6 @@
 			$user_id = $_SESSION['id'];
 		}
 
-	$_SESSION['categories'] = $_POST['Natur'];
-	echo $_SESSION['categories'];
-
 
 	if(isset($_POST['login-submit'])){
 		if(!empty($_POST['email']) && !empty($_POST['password'])){
