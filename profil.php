@@ -1,13 +1,25 @@
 <?php
 	session_start();
+	if(!isset($_SESSION['id'])){
+		header("Location:index.php");
+    }else{
+		$user_id = $_SESSION['id'];
+	}
     
 	require_once('system/data.php');
 	require_once('system/security.php');
 
-	$error = false;
-	$error_msg = "";
-	$success = false;
-	$success_msg = "";
+	if(isset($_POST['update-submit'])){
+		$email = filter_data($_POST['email']);
+		$password = filter_data($_POST['password']);
+		$confirm_password = filter_data($_POST['confirm-password']);
+		$username = filter_data($_POST['username']);
+			
+		$result = update_user($user_id, $email, $password, $confirm_password, $username);
+	}
+
+	$result = get_user($user_id);
+	$user = mysqli_fetch_assoc($result);
 
 
 ?>
