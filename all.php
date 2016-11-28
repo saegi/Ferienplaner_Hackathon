@@ -167,7 +167,7 @@ session_start();
                         <button type="button" class="btn btn-default">Home</button>
                 </div>
                 <div class="col-md-4">
-                    <a href="categories.php" target="_self">
+                    <a href="output.php" target="_self">
                         <button type="button" class="btn btn-default">Weiter</button>
                 </div>
             </div>
