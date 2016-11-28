@@ -10,6 +10,7 @@
 	require_once('system/security.php');
 
 	$error_msg = "";
+	$error = false;
 
 	if(!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm-password'])){
 		if ($password == $password_confirm){
