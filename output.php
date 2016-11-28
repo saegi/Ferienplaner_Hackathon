@@ -23,8 +23,9 @@
                     <div class="thumbnail" style="margin:0px auto">
                         <img src="bilder/web/sourceonestuff.jpg" alt="source_website">
                         <div class="caption">
-                            <h3>Alphorn Erlebnis</h3>
-                            <p> Source One ist eine Koordinationsfirma, die anderen Unternehmen hilft, sich in die Firmenwelt besser zu integrieren. Dies war unser erster internationaler Auftrag und Auftritt. Zum ersten Mal hat Swissmedi@ eine Webseite erstellt, die keine Bilder enthaltet. Dazu ist sie interaktiv, übersichtlich und modern eingerichtet.
+                            <h3><?php echo $Aktivitaeten['name']; ?></h3>
+                            <p>
+                                <?php echo $Aktivitaeten['beschreibung']; ?>
                             </p>
                             <p><a href="http://www.sourceonestaff.com/" class="btn btn-primary" target="_blank" role="button">Speichern (nur eingeloggt)</a></p>
                         </div>
