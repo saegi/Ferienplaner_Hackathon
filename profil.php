@@ -83,19 +83,6 @@
 					<a href="index.php" target="_self">
 					<button type="button" class="btn btn-default">Home</button>
 				</div>
-
-  		<!-- Error NAchrichten Ausgeben -->
-       <?php
-	   		if($success == true){
-		?>
-	 		<div class="alert alert-success" role="alert"><?php echo $success_msg ?></div>
-      <?php
-			}
-	   		if($error == true){
-		?>
-       <div class="alert alert-danger" role="alert"><?php echo $error_msg; ?></div>
-       <?php
-      }
 	  ?>
 
         <!--jquery-->
