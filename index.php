@@ -35,33 +35,33 @@
             </div>
             <div class="row row-centered">
                 <div class="col-md-12">
-                    <a href="calendar.php" target="_self">
+                    <a href="all.php" target="_self">
                         <button type="button" class="btn btn-default">Weiter</button>
                 </div>
             </div>
-			<div class="row row-centered">
-				<div class="col-md-4">
-					<a href="login.php" target="_self">
-						<button type="button" class="btn btn-default">Login</button>
-				</div>
-				<?php
+            <div class="row row-centered">
+                <div class="col-md-4">
+                    <a href="login.php" target="_self">
+                        <button type="button" class="btn btn-default">Login</button>
+                </div>
+                <?php
 				if(isset($_SESSION['id'])) {?>
-				<div class="col-md-4">
-					<a href="profil.php" target="_self">
-						<button type="button" class="btn btn-default" id="profil">Profil bearbeiten</button>
-				</div>
-				<?php } ?>
-				<?php
+                    <div class="col-md-4">
+                        <a href="profil.php" target="_self">
+                            <button type="button" class="btn btn-default" id="profil">Profil bearbeiten</button>
+                    </div>
+                    <?php } ?>
+                        <?php
 				if(isset($_SESSION['id'])) {?>
-				<div class="col-md-4">
-					<a href="index.php" target="_self">
-					<button type="button" class="btn btn-default">Aktivitäten verwalten</button>
-				</div>
-				<?php } ?>
-			</div>
+                            <div class="col-md-4">
+                                <a href="index.php" target="_self">
+                                    <button type="button" class="btn btn-default">Aktivitäten verwalten</button>
+                            </div>
+                            <?php } ?>
+            </div>
         </div>
 
-        <!--jquery--> 
+        <!--jquery-->
         <script src="http://code.jquery.com/jquery-latest.js"></script>
 
         <!-- bootstrap.min.css -->
