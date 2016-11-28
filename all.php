@@ -27,15 +27,22 @@ session_start();
             <div class="row row-centered">
                 <div class="col-md-12">
 
-                  <form action="#" method="post">
-                  <input type="checkbox" name="check_list[]" value="Mo"><label>Mo</label>
-                  <input type="checkbox" name="check_list[]" value="Di"><label>Di</label>
-                  <input type="checkbox" name="check_list[]" value="Mi"><label>Mi</label>
-                  <input type="checkbox" name="check_list[]" value="Do"><label>Do</label>
-                  <input type="checkbox" name="check_list[]" value="Fr"><label>Fr</label>
-                  <input type="checkbox" name="check_list[]" value="Sa"><label>Sa</label>
-                  <input type="checkbox" name="check_list[]" value="So"><label>So</label>
-                  </form>
+                    <form action="#" method="post">
+                        <input type="checkbox" name="check_list[]" value="Mo">
+                        <label>Mo</label>
+                        <input type="checkbox" name="check_list[]" value="Di">
+                        <label>Di</label>
+                        <input type="checkbox" name="check_list[]" value="Mi">
+                        <label>Mi</label>
+                        <input type="checkbox" name="check_list[]" value="Do">
+                        <label>Do</label>
+                        <input type="checkbox" name="check_list[]" value="Fr">
+                        <label>Fr</label>
+                        <input type="checkbox" name="check_list[]" value="Sa">
+                        <label>Sa</label>
+                        <input type="checkbox" name="check_list[]" value="So">
+                        <label>So</label>
+                    </form>
 
                 </div>
             </div>
@@ -52,11 +59,16 @@ session_start();
             <div class="row row-centered">
                 <div class="col-md-12">
                     <form action="#" method="post">
-                    <input type="checkbox" name="check_list2[]" value="Natur"><label>Natur</label>
-                    <input type="checkbox" name="check_list2[]" value="Sport"><label>Sport</label>
-                    <input type="checkbox" name="check_list2[]" value="Wellness"><label>Wellness</label>
-                    <input type="checkbox" name="check_list2[]" value="Kultur"><label>Kultur</label>
-                    <input type="checkbox" name="check_list2[]" value="Unterhaltung"><label>Unterhaltung</label>
+                        <input type="checkbox" name="check_list2[]" value="Natur">
+                        <label>Natur</label>
+                        <input type="checkbox" name="check_list2[]" value="Sport">
+                        <label>Sport</label>
+                        <input type="checkbox" name="check_list2[]" value="Wellness">
+                        <label>Wellness</label>
+                        <input type="checkbox" name="check_list2[]" value="Kultur">
+                        <label>Kultur</label>
+                        <input type="checkbox" name="check_list2[]" value="Unterhaltung">
+                        <label>Unterhaltung</label>
                 </div>
             </div>
 
@@ -130,7 +142,8 @@ session_start();
 
             <div class="row row-centered">
                 <div class="col-md-4">
-
+                    <a href="logout.php" target="_self">
+                        <button type="button" class="btn btn-default">Logout</button>
                 </div>
                 <div class="col-md-4">
                     <a href="index.php" target="_self">
@@ -157,7 +170,7 @@ session_start();
         <!--eigenes css-->
         <link rel="stylesheet" href="css/css.css" stylesheet.css "">
 
-        
+
 
     </body>
 
