@@ -38,9 +38,9 @@ function get_user($user_id){
 /* profil.php SQL Statements in Functions Register and Login*/
 /***********************/
 
-function update_user($email, $password, $confirm_password, $username){
+function update_user($email, $password, $confirm_password, $username, $user_id){
     $sql_ok = false;
-    $sql = "UPDATE user SET ";
+    $sql = "UPDATE User SET ";
 
     if($email != ""){
         $sql .= "email = '$email', ";

@@ -33,7 +33,13 @@
             </div>
             <div class="row row-centered">
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-default">Login</button>
+                    <?php   
+session_start(); //to ensure you are using same session
+session_destroy(); //destroy the session
+header("location:/index.php"); //to redirect back to "index.php" after logging out
+exit();
+?>
+                        <button type="button" class="btn btn-default">Logout</button>
                 </div>
                 <div class="col-md-4">
                     <a href="activity.php" target="_self">

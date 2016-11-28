@@ -12,9 +12,10 @@
 	if(isset($_POST['update-submit'])){
 		$email = filter_data($_POST['email']);
 		$password = filter_data($_POST['password']);
+		$confirm_password = filter_data($_POST['confirm_password']);
 		$username = filter_data($_POST['username']);
 
-		$result = update_user($user_id, $email, $password, $username);
+		$result = update_user($email, $password, $confirm_password, $username, $user_id);
 	}
 
 	$result = get_user($user_id);
@@ -55,10 +56,10 @@
                                             <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Neues Passwort">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Passwort wiederholen">
+                                            <input type="password" name="confirm_password" id="confirm_password" tabindex="2" class="form-control" placeholder="Passwort wiederholen">
                                         </div>
                                         <div class="col-xs-6 form-group pull-right">
-                                            <input type="submit" name="update-user" id="update-user" tabindex="4" class="form-control btn btn-login" value="Speichern">
+                                            <input type="submit" name="update-submit" tabindex="4" class="form-control btn btn-login" value="Speichern">
                                         </div>
                                     </form>
 
