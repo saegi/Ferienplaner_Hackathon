@@ -59,15 +59,15 @@ session_start();
             <div class="row row-centered">
                 <div class="col-md-12">
                     <form action="#" method="post">
-                        <input type="checkbox" name="check_list2[]" value="Natur">
+                        <input type="checkbox" name="categories[]" value="Natur">
                         <label>Natur</label>
-                        <input type="checkbox" name="check_list2[]" value="Sport">
+                        <input type="checkbox" name="categories[]" value="Sport">
                         <label>Sport</label>
-                        <input type="checkbox" name="check_list2[]" value="Wellness">
+                        <input type="checkbox" name="categories[]" value="Wellness">
                         <label>Wellness</label>
-                        <input type="checkbox" name="check_list2[]" value="Kultur">
+                        <input type="checkbox" name="categories[]" value="Kultur">
                         <label>Kultur</label>
-                        <input type="checkbox" name="check_list2[]" value="Unterhaltung">
+                        <input type="checkbox" name="categories[]" value="Unterhaltung">
                         <label>Unterhaltung</label>
                 </div>
             </div>
@@ -94,8 +94,6 @@ session_start();
 
             <br>
             <hr <br>
-            <hr>
-            <br>
 
 
             <div class="row row-centered">
