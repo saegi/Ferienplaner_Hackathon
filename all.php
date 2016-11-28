@@ -34,7 +34,6 @@ session_start();
                   <input type="checkbox" name="check_list[]" value="Fr"><label>Fr</label>
                   <input type="checkbox" name="check_list[]" value="Sa"><label>Sa</label>
                   <input type="checkbox" name="check_list[]" value="So"><label>So</label>
-                  <input type="submit" name="submit" value="Hinzufügen"/>
                   </form>
 
                 </div>
@@ -51,26 +50,12 @@ session_start();
             </div>
             <div class="row row-centered">
                 <div class="col-md-12">
-                    <label>
-                        <input type="checkbox" value="1" name="Kategorie[]">
-                        <b>Natur</b>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="2" name="Kategorie[]">
-                        <b>Sport</b>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="3" name="Kategorie[]">
-                        <b>Wellness</b>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="3" name="Kategorie[]">
-                        <b>Kultur</b>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="3" name="Kategorie[]">
-                        <b>Unterhaltung</b>
-                    </label>
+                    <form action="#" method="post">
+                    <input type="checkbox" name="check_list2[]" value="Natur"><label>Natur</label>
+                    <input type="checkbox" name="check_list2[]" value="Sport"><label>Sport</label>
+                    <input type="checkbox" name="check_list2[]" value="Wellness"><label>Wellness</label>
+                    <input type="checkbox" name="check_list2[]" value="Kultur"><label>Kultur</label>
+                    <input type="checkbox" name="check_list2[]" value="Unterhaltung"><label>Unterhaltung</label>
                 </div>
             </div>
 
@@ -141,23 +126,6 @@ session_start();
             <hr>
             <br>
 
-            <div class="row row-centered">
-                <div class="col-md-12">
-                  <div class="text_input">
-                      <p>Hinzufügen</p>
-                      <?php
-                      if(isset($_POST['submit'])){//to run PHP script on submit
-                      if(!empty($_POST['check_list'])){
-                      // Loop to store and display values of individual checked checkbox.
-                      foreach($_POST['check_list'] as $selected){
-                      echo $selected.", ";
-                      }
-                      }
-                      }
-                      ?>
-                    </div>
-                    </div>
-            </div>
 
             <div class="row row-centered">
                 <div class="col-md-4">
