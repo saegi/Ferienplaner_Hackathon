@@ -29,4 +29,36 @@ function register($username, $email, $password){
   return get_result ($sql);
 }
 
-?>
+function get_user($id){
+	$sql = "SELECT * FROM User WHERE user_id = $id;";
+	return get_result ($sql);
+}
+
+function update_user($email, $password, $confirm_password, $username){
+    $sql_ok = false;
+    $sql = "UPDATE user SET ";
+    if($email != ""){
+        $sql .= "email = '$email', ";
+        $sql_ok = true;
+	}
+	if($password != "" && $password == $confirm_password) {
+		$sql .= "password = '$password', ";
+		$sql_ok = true;
+	}
+	if($username != ""){
+		$sql .= "username = '$username', ";
+		$sql_ok = true;
+	}
+	$sql = substr_replace($sql, ' ', -2, 1); 
+	$sql .= " WHERE user_id = $user_id ;";
+
+	if($sql_ok){
+	  return get_result($sql);
+	}else{
+	  return false;
+	}
+}
+
+/***********************/
+/* profil.php SQL Statements in Functions Register and Login*/
+/***********************/
