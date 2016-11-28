@@ -50,7 +50,11 @@
                     </label>
                 </div>
             </div>
+
             <br>
+            <hr>
+            <br>
+
             <div class="row row-centered">
                 <div class="col-md-12">
                     <h1>Auf was für eine Aktivität haben sie Lust</h1>
@@ -81,6 +85,10 @@
                 </div>
             </div>
 
+            <br>
+            <hr>
+            <br>
+
             <div class="row row-centered">
                 <div class="col-md-12">
                     <h1>Wer soll dabei sein?</h1>
@@ -109,6 +117,10 @@
                 </div>
             </div>
 
+            <br>
+            <hr>
+            <br>
+
             <div class="row row-centered">
                 <div class="col-md-12">
                     <h1>Budget</h1>
@@ -136,7 +148,9 @@
             </div>
 
 
-
+            <br>
+            <hr>
+            <br>
 
 
             <div class="row row-centered">
