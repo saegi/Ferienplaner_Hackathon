@@ -33,7 +33,8 @@
             </div>
             <div class="row row-centered">
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-default">Logout</button>
+                    <a href="logout.php" target="_self">
+                        <button type="button" class="btn btn-default">Logout</button>
                 </div>
                 <div class="col-md-4">
                     <a href="activity.php" target="_self">
