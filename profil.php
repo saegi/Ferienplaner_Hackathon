@@ -11,8 +11,8 @@
 
 	$error_msg = "";
 	$error = false;
-
-	if(!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm-password'])){
+		
+		
 		if ($password == $password_confirm){
 			if(isset($_POST['update-submit'])){
 				$email = filter_data($_POST['email']);
@@ -26,10 +26,6 @@
 			$error = true;
 			$error_msg .= "Bitte überprüfen Sie die Passworteingabe.<br/>";
 		}
-	}else{
-		$error = true;
-        $error_msg .= "Bitte füllen Sie alle Felder aus.<br/>";
-	}
 
 	$result = get_user($user_id);
 	$user = mysqli_fetch_assoc($result);
@@ -64,7 +60,7 @@
                                           <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Neuer Benutzername" value="">
                                         </div>
                                       <div class="form-group">
-                                          <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Altes Passwort">
+                                          <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Passwort">
                                       </div>
                                       <div class="form-group">
                                           <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Passwort wiederholen">
