@@ -70,14 +70,14 @@ function update_user($email, $password, $confirm_password, $username, $user_id){
 /***********************/
 
 $days = $_POST['days'];
-$wd = "("
+$wd = "(";
 $n = 0;
 
 foreach($days as $day){
 	if ($n > 0){
 		$wd .= " OR ";
 	  $wd .= " $day = 1 ";
-	  $n ++
+	  $n ++;
 	}
 }
-$wd .= ")"
+$wd .= ")";
