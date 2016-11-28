@@ -1,4 +1,4 @@
-<?php 
+<?php
 	session_start();
     if(!isset($_SESSION['id'])){
 	   header("Location:index.php");
@@ -24,9 +24,13 @@
                         <img src="bilder/web/sourceonestuff.jpg" alt="source_website">
                         <div class="caption">
                             <h3>Alphorn Erlebnis</h3>
-                            <p>Source One ist eine Koordinationsfirma, die anderen Unternehmen hilft, sich in die Firmenwelt besser zu integrieren. Dies war unser erster internationaler Auftrag und Auftritt. Zum ersten Mal hat Swissmedi@ eine Webseite erstellt, die keine Bilder enthaltet. Dazu ist sie interaktiv, übersichtlich und modern eingerichtet.
+                            <p><?php
+														if (isset($_POST['verfuegbarkeit'])){
+															echo $_POST['verfuegbarkeit']; // Displays value of checked checkbox.
+														}
+														?>Source One ist eine Koordinationsfirma, die anderen Unternehmen hilft, sich in die Firmenwelt besser zu integrieren. Dies war unser erster internationaler Auftrag und Auftritt. Zum ersten Mal hat Swissmedi@ eine Webseite erstellt, die keine Bilder enthaltet. Dazu ist sie interaktiv, übersichtlich und modern eingerichtet.
                             </p>
-                            <p><a href="http://www.sourceonestaff.com/" class="btn btn-primary" target="_blank" role="button">Speichern (nur eingelogt)</a></p>
+                            <p><a href="http://www.sourceonestaff.com/" class="btn btn-primary" target="_blank" role="button">Speichern (nur eingeloggt)</a></p>
                         </div>
                     </div>
                 </div>

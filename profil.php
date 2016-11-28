@@ -5,7 +5,7 @@
     }else{
 		$user_id = $_SESSION['id'];
 	}
-    
+
 	require_once('system/data.php');
 	require_once('system/security.php');
 
@@ -14,7 +14,7 @@
 		$password = filter_data($_POST['password']);
 		$confirm_password = filter_data($_POST['confirm-password']);
 		$username = filter_data($_POST['username']);
-			
+
 		$result = update_user($user_id, $email, $password, $confirm_password, $username);
 	}
 
@@ -47,16 +47,16 @@
                                   <form id="login-form" action="#" method="post" role="form" style="display: block;">
                                       <h2>Profil bearbeiten</h2>
                                       <div class="form-group">
-                                          <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="E-Mailadresse" value="">
+                                          <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="E-Mailadresse" value="<?php echo $user['email']; ?>">
                                           </div>
                                       <div class="form-group">
-                                          <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Neuer Benutzername" value="">
+                                          <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Neuer Benutzername" value="<?php echo $user['username']; ?>">
                                         </div>
                                       <div class="form-group">
-                                          <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Altes Passwort">
+                                          <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Neues Passwort">
                                       </div>
                                       <div class="form-group">
-                                          <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Neues Passwort">
+                                          <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Passwort wiederholen">
                                       </div>
                                       <div class="col-xs-6 form-group pull-right">
                                           <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Speichern">

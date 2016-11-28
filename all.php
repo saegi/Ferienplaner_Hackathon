@@ -25,34 +25,18 @@ session_start();
             </div>
             <div class="row row-centered">
                 <div class="col-md-12">
-                    <label>
-                        <input type="checkbox" value="1" name="Mo">
-                        <b>Mo</b>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="2" name="Di">
-                        <b>Di</b>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="3" name="Mi">
-                        <b>Mi</b>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="4" name="Do">
-                        <b>Do</b>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="5" name="Fr">
-                        <b>Fr</b>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="6" name="Sa">
-                        <b>Sa</b>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="7" name="So">
-                        <b>So</b>
-                    </label>
+
+                  <form action="#" method="post">
+                  <input type="checkbox" name="check_list[]" value="Mo"><label>Mo</label>
+                  <input type="checkbox" name="check_list[]" value="Di"><label>Di</label>
+                  <input type="checkbox" name="check_list[]" value="Mi"><label>Mi</label>
+                  <input type="checkbox" name="check_list[]" value="Do"><label>Do</label>
+                  <input type="checkbox" name="check_list[]" value="Fr"><label>Fr</label>
+                  <input type="checkbox" name="check_list[]" value="Sa"><label>Sa</label>
+                  <input type="checkbox" name="check_list[]" value="So"><label>So</label>
+                  <input type="submit" name="submit" value="Hinzufügen"/>
+                  </form>
+
                 </div>
             </div>
 
@@ -68,23 +52,23 @@ session_start();
             <div class="row row-centered">
                 <div class="col-md-12">
                     <label>
-                        <input type="checkbox" value="1" name="Natur">
+                        <input type="checkbox" value="1" name="Kategorie[]">
                         <b>Natur</b>
                     </label>
                     <label>
-                        <input type="checkbox" value="2" name="Sport">
+                        <input type="checkbox" value="2" name="Kategorie[]">
                         <b>Sport</b>
                     </label>
                     <label>
-                        <input type="checkbox" value="3" name="Wellness">
+                        <input type="checkbox" value="3" name="Kategorie[]">
                         <b>Wellness</b>
                     </label>
                     <label>
-                        <input type="checkbox" value="3" name="Kultur">
+                        <input type="checkbox" value="3" name="Kategorie[]">
                         <b>Kultur</b>
                     </label>
                     <label>
-                        <input type="checkbox" value="3" name="Unterhaltung">
+                        <input type="checkbox" value="3" name="Kategorie[]">
                         <b>Unterhaltung</b>
                     </label>
                 </div>
@@ -157,6 +141,23 @@ session_start();
             <hr>
             <br>
 
+            <div class="row row-centered">
+                <div class="col-md-12">
+                  <div class="text_input">
+                      <p>Hinzufügen</p>
+                      <?php
+                      if(isset($_POST['submit'])){//to run PHP script on submit
+                      if(!empty($_POST['check_list'])){
+                      // Loop to store and display values of individual checked checkbox.
+                      foreach($_POST['check_list'] as $selected){
+                      echo $selected.", ";
+                      }
+                      }
+                      }
+                      ?>
+                    </div>
+                    </div>
+            </div>
 
             <div class="row row-centered">
                 <div class="col-md-4">
