@@ -59,7 +59,7 @@ session_start();
             </div>
             <div class="row row-centered">
                 <div class="col-md-4">
-                    <a href="categories.php?Natur=hello" target="_self">
+                    <a href="calendar.php" target="_self">
                         <button type="button" class="btn btn-default">Zurück</button>
                 </div>
                 <div class="col-md-4">
