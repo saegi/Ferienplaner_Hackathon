@@ -15,14 +15,6 @@
         <div class="container">
             <div class="row row-centered">
                 <div class="col-md-12">
-                    <!--Progress Bar-->
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-centered">
-                <div class="col-md-12">
                     <h1>An welchen Wochentagen soll die Aktivität stattfinden?</h1>
                 </div>
             </div>
@@ -58,15 +50,7 @@
                     </label>
                 </div>
             </div>
-
-            <div class="row row-centered">
-                <div class="col-md-12">
-                    <!--Progress Bar-->
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
-                    </div>
-                </div>
-            </div>
+            <br>
             <div class="row row-centered">
                 <div class="col-md-12">
                     <h1>Auf was für eine Aktivität haben sie Lust</h1>
@@ -99,14 +83,6 @@
 
             <div class="row row-centered">
                 <div class="col-md-12">
-                    <!--Progress Bar-->
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-centered">
-                <div class="col-md-12">
                     <h1>Wer soll dabei sein?</h1>
                 </div>
             </div>
@@ -133,14 +109,6 @@
                 </div>
             </div>
 
-            <div class="row row-centered">
-                <div class="col-md-12">
-                    <!--Progress Bar-->
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                    </div>
-                </div>
-            </div>
             <div class="row row-centered">
                 <div class="col-md-12">
                     <h1>Budget</h1>
