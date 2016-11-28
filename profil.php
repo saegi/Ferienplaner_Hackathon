@@ -67,7 +67,7 @@
                                           <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Altes Passwort">
                                       </div>
                                       <div class="form-group">
-                                          <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Neues Passwort">
+                                          <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Passwort wiederholen">
                                       </div>
                                       <div class="col-xs-6 form-group pull-right">
                                           <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Speichern">
