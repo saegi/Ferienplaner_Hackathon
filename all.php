@@ -87,13 +87,7 @@ session_start();
                 </div>
             </div>
             <div class="row row-centered">
-                <div class="col-md-4">
-                    <input type="number">
-                </div>
-                <div class="col-md-4">
-                    <input type="number">
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <input type="number">
                 </div>
             </div>
@@ -106,27 +100,7 @@ session_start();
                 <div class="col-md-12">
                     <h1>Budget</h1>
                 </div>
-            </div>
-            <div class="row row-centered">
-                <div class="col-md-12">
-                    <div class="text_input">
-                        <p>Maximales Budget pro Person</p>
-                        <input type="range" name="zahlen" id="regler" min="0" max="250" value="0" step="5" onchange="showValue(this.value), wechsel()" />
-
-                        <span id="kosten">0</span>
-
-                        <script type="text/javascript">
-                            function showValue(newValue) {
-                                document.getElementById("kosten").innerHTML = newValue;
-                            }
-                        </script>
-
-                        <article id="kosten_rechts">
-                            <p>CHF</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
+			</div>
 
 
             <br>
