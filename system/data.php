@@ -63,7 +63,7 @@ function update_user($email, $password, $confirm_password, $username, $user_id){
 	  return false;
 	}
 }
-<<<<<<< HEAD
+
 
 /***********************/
 /* Days Berechnung */
@@ -72,18 +72,12 @@ function update_user($email, $password, $confirm_password, $username, $user_id){
 $days = $_POST['days'];
 $wd = "("
 $n = 0;
+
 foreach($days as $day){
-if ($n > 0) $wd .= " OR ";
-  $wd .= " $day = 1 ";
-  $n ++
+	if ($n > 0){
+		$wd .= " OR ";
+	  $wd .= " $day = 1 ";
+	  $n ++
+	}
 }
 $wd .= ")"
-=======
-/***********************/
-/* all.php
-/***********************/
-function checkbox () {
-	
-	
-}
->>>>>>> origin/master
