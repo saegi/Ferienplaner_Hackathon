@@ -34,6 +34,10 @@ function get_user($id){
 	return get_result ($sql);
 }
 
+/***********************/
+/* profil.php SQL Statements in Functions Register and Login*/
+/***********************/
+
 function update_user($email, $password, $confirm_password, $username){
     $sql_ok = false;
     $sql = "UPDATE user SET ";
@@ -58,7 +62,3 @@ function update_user($email, $password, $confirm_password, $username){
 	  return false;
 	}
 }
-
-/***********************/
-/* profil.php SQL Statements in Functions Register and Login*/
-/***********************/
