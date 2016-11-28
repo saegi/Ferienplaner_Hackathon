@@ -82,14 +82,8 @@ session_start();
                 </div>
             </div>
             <div class="row row-centered">
-                <div class="col-md-4">
-                    <img src="http://image.flaticon.com/icons/svg/43/43241.svg" alt="Bild Kind" width="200px">
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <img src="http://image.flaticon.com/icons/png/512/10/10522.png" alt="Bild Erwachsener" width="200px">
-                </div>
-                <div class="col-md-4">
-                    <img src="http://image.flaticon.com/icons/png/512/27/27445.png" alt="Bild Senior" width="200px">
                 </div>
             </div>
             <div class="row row-centered">
