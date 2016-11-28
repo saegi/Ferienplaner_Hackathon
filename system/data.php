@@ -69,15 +69,19 @@ function update_user($email, $password, $confirm_password, $username, $user_id){
 /* Days Berechnung */
 /***********************/
 
-$days = $_POST['days'];
-$wd = "(";
-$n = 0;
+	$days = $_POST['days'];
+	$wd = "(";
+	$n = 0;
 
-foreach($days as $day){
-	if ($n > 0){
-		$wd .= " OR ";
-	  $wd .= " $day = 1 ";
-	  $n ++;
+	foreach($days as $day){
+		if ($n > 0){
+			$wd .= " OR ";
+		  $wd .= " $day = 1 ";
+		  $n ++;
+		}
 	}
-}
-$wd .= ")";
+	$wd .= ")";
+
+
+
+?>

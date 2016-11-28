@@ -93,7 +93,8 @@ session_start();
             </div>
 
             <br>
-            <hr>
+            <hr
+
             <br>
             <hr>
             <br>
