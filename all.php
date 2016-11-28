@@ -32,19 +32,19 @@ session_start();
                 <div class="col-md-12">
 
                     <form action="#" method="post">
-                        <input type="checkbox" name="check_list[]" value="Mo">
+                        <input type="checkbox" name="days[]" value="mo">
                         <label>Mo</label>
-                        <input type="checkbox" name="check_list[]" value="Di">
+                        <input type="checkbox" name="days[]" value="di">
                         <label>Di</label>
-                        <input type="checkbox" name="check_list[]" value="Mi">
+                        <input type="checkbox" name="days[]" value="mi">
                         <label>Mi</label>
-                        <input type="checkbox" name="check_list[]" value="Do">
+                        <input type="checkbox" name="days[]" value="do">
                         <label>Do</label>
-                        <input type="checkbox" name="check_list[]" value="Fr">
+                        <input type="checkbox" name="days[]" value="fr">
                         <label>Fr</label>
-                        <input type="checkbox" name="check_list[]" value="Sa">
+                        <input type="checkbox" name="days[]" value="sa">
                         <label>Sa</label>
-                        <input type="checkbox" name="check_list[]" value="So">
+                        <input type="checkbox" name="days[]" value="so">
                         <label>So</label>
                     </form>
                 </div>
@@ -85,14 +85,8 @@ session_start();
                 </div>
             </div>
             <div class="row row-centered">
-                <div class="col-md-4">
-                    <img src="http://image.flaticon.com/icons/svg/43/43241.svg" alt="Bild Kind" width="200px">
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <img src="http://image.flaticon.com/icons/png/512/10/10522.png" alt="Bild Erwachsener" width="200px">
-                </div>
-                <div class="col-md-4">
-                    <img src="http://image.flaticon.com/icons/png/512/27/27445.png" alt="Bild Senior" width="200px">
                 </div>
             </div>
             <div class="row row-centered">
@@ -137,11 +131,9 @@ session_start();
                 </div>
             </div>
 
-
             <br>
             <hr>
             <br>
-
 
             <div class="row row-centered">
                 <div class="col-md-4">
@@ -159,8 +151,6 @@ session_start();
             </div>
         </div>
 
-
-
         <!--jquery-->
         <script src="http://code.jquery.com/jquery-latest.js"></script>
 
@@ -172,8 +162,6 @@ session_start();
 
         <!--eigenes css-->
         <link rel="stylesheet" href="css/css.css" stylesheet.css "">
-
-
 
     </body>
 
