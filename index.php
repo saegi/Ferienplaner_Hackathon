@@ -40,10 +40,20 @@
                 </div>
             </div>
             <div class="row row-centered">
+            	<?php
+				if(isset($_SESSION['id'])) {?>
+                <div class="col-md-4">
+                    <a href="logout.php" target="_self">
+                        <button type="button" class="btn btn-default">Login</button>
+                </div>
+                <?php } ?>
+            	<?php
+				if(!isset($_SESSION['id'])) {?>
                 <div class="col-md-4">
                     <a href="login.php" target="_self">
                         <button type="button" class="btn btn-default">Login</button>
                 </div>
+                <?php } ?>
                 <?php
 				if(isset($_SESSION['id'])) {?>
                     <div class="col-md-4">
@@ -57,7 +67,7 @@
                                 <a href="index.php" target="_self">
                                     <button type="button" class="btn btn-default">Aktivitäten verwalten</button>
                             </div>
-                            <?php } ?>
+						<?php } ?>
             </div>
         </div>
 
