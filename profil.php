@@ -9,19 +9,29 @@
 	require_once('system/data.php');
 	require_once('system/security.php');
 
-	if(isset($_POST['update-submit'])){
-		$email = filter_data($_POST['email']);
-		$password = filter_data($_POST['password']);
-		$confirm_password = filter_data($_POST['confirm-password']);
-		$username = filter_data($_POST['username']);
-			
-		$result = update_user($user_id, $email, $password, $confirm_password, $username);
+	$error_msg = "";
+
+	if(!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm-password'])){
+		if ($password == $password_confirm){
+			if(isset($_POST['update-submit'])){
+				$email = filter_data($_POST['email']);
+				$password = filter_data($_POST['password']);
+				$confirm_password = filter_data($_POST['confirm-password']);
+				$username = filter_data($_POST['username']);
+
+				$result = update_user($user_id, $email, $password, $confirm_password, $username);
+			}
+		}else{
+			$error = true;
+			$error_msg .= "Bitte überprüfen Sie die Passworteingabe.<br/>";
+		}
+	}else{
+		$error = true;
+        $error_msg .= "Bitte füllen Sie alle Felder aus.<br/>";
 	}
 
 	$result = get_user($user_id);
 	$user = mysqli_fetch_assoc($result);
-
-
 ?>
 
     <!DOCTYPE html>
@@ -83,7 +93,14 @@
 					<a href="index.php" target="_self">
 					<button type="button" class="btn btn-default">Home</button>
 				</div>
-	  ?>
+	  	
+        <?php
+			if($error == true){
+		?>
+       			<div class="alert alert-danger" role="alert"><?php echo $error_msg; ?></div>
+       <?php
+      		}
+	   ?>
 
         <!--jquery-->
         <script src="http://code.jquery.com/jquery-latest.js"></script>
