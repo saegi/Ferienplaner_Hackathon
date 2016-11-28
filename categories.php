@@ -6,8 +6,7 @@ session_start();
 		$user_id = $_SESSION['id'];
    }
 
-	$_SESSION['categories'] = $_POST['Natur'];
-	echo $_SESSION['categories'];l
+	
 ?>
     <!DOCTYPE html>
     <html>

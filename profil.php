@@ -1,15 +1,14 @@
 <?php
 	session_start();
-    if(isset($_SESSION['id'])) unset($_SESSION['id']);
-    session_destroy();
+		if(!isset($_SESSION['id'])){
+    		header("Location:index.php");
+	    }else{
+			$user_id = $_SESSION['id'];
+		}
 
-	require_once('system/data.php');
-	require_once('system/security.php');
+	$_SESSION['categories'] = $_POST['Natur'];
+	echo $_SESSION['categories'];
 
-	$error = false;
-	$error_msg = "";
-	$success = false;
-	$success_msg = "";
 
 	if(isset($_POST['login-submit'])){
 		if(!empty($_POST['email']) && !empty($_POST['password'])){
