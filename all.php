@@ -18,7 +18,7 @@ if(isset($_POST['go-button'])){
             $categories = $_POST['category'];
 
 } 
-            
+}
                         
 ?>
 
@@ -34,15 +34,16 @@ if(isset($_POST['go-button'])){
 
     <body>
         <div class="container">
-            <div class="row row-centered">
-                <div class="col-md-12">
-                    <h1>An welchen Wochentagen soll die Aktivität stattfinden?</h1>
+            <form action="output.php" method="post">
+                <div class="row row-centered">
+                    <div class="col-md-12">
+                        <h1>An welchen Wochentagen soll die Aktivität stattfinden?</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row row-centered">
-                <div class="col-md-12">
+                <div class="row row-centered">
+                    <div class="col-md-12">
 
-                    <form action="#" method="post">
+
                         <input type="checkbox" name="days[]" value="mo">
                         <label>Mo</label>
                         <input type="checkbox" name="days[]" value="di">
@@ -57,23 +58,20 @@ if(isset($_POST['go-button'])){
                         <label>Sa</label>
                         <input type="checkbox" name="days[]" value="so">
                         <label>So</label>
-                    </form>
-
+                    </div>
                 </div>
-            </div>
 
-            <br>
-            <hr>
-            <br>
+                <br>
+                <hr>
+                <br>
 
-            <div class="row row-centered">
-                <div class="col-md-12">
-                    <h1>Auf was für eine Aktivität haben sie Lust</h1>
+                <div class="row row-centered">
+                    <div class="col-md-12">
+                        <h1>Auf was für eine Aktivität haben sie Lust</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row row-centered">
-                <div class="col-md-12">
-                    <form action="#" method="post">
+                <div class="row row-centered">
+                    <div class="col-md-12">
                         <input type="checkbox" name="categories[]" value="Natur">
                         <label>Natur</label>
                         <input type="checkbox" name="categories[]" value="Sport">
@@ -84,47 +82,49 @@ if(isset($_POST['go-button'])){
                         <label>Kultur</label>
                         <input type="checkbox" name="categories[]" value="Unterhaltung">
                         <label>Unterhaltung</label>
+                    </div>
                 </div>
-            </div>
 
-            <br>
-            <hr>
-            <br>
+                <br>
+                <hr>
+                <br>
 
-            <div class="row row-centered">
-                <div class="col-md-12">
-                    <h1>Wer soll dabei sein?</h1>
+                <div class="row row-centered">
+                    <div class="col-md-12">
+                        <h1>Wer soll dabei sein?</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row row-centered">
-                <div class="col-md-12">
-                    <img src="http://image.flaticon.com/icons/png/512/10/10522.png" alt="Bild Erwachsener" width="200px">
+                <div class="row row-centered">
+                    <div class="col-md-12">
+                        <img src="http://image.flaticon.com/icons/png/512/10/10522.png" alt="Bild Erwachsener" width="200px">
+                    </div>
                 </div>
-            </div>
-            <div class="row row-centered">
-                <div class="col-md-12">
-                    <input type="number" name="people" min="0">
+                <div class="row row-centered">
+                    <div class="col-md-12">
+                        <input type="number" name="people" min="0">
+                    </div>
                 </div>
-            </div>
 
-            <br>
-            <hr <br>
+                <br>
+                <hr <br>
 
 
-            <div class="row row-centered">
-                <div class="col-md-4">
-                    <a href="logout.php" target="_self">
-                        <button type="button" class="btn btn-default">Logout</button>
+                <div class="row row-centered">
+                    <div class="col-md-4">
+                        <a href="logout.php" target="_self">
+                            <button type="button" class="btn btn-default">Logout</button>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="index.php" target="_self">
+                            <button type="button" class="btn btn-default">Home</button>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" name="go-button" class="btn btn-default">Weiter</button>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <a href="index.php" target="_self">
-                        <button type="button" class="btn btn-default">Home</button>
-                </div>
-                <div class="col-md-4">
-                    <a href="output.php" target="_self">
-                        <button type="button" name="go-button" class="btn btn-default">Weiter</button>
-                </div>
-            </div>
+            </form>
         </div>
 
 

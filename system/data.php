@@ -68,8 +68,7 @@ function update_user($email, $password, $confirm_password, $username, $user_id){
 /***********************/
 /* Days Berechnung */
 /***********************/
-function wochentage($mo, $di, $mi, $do, $fr, $sa, $so){
-	$days = $_POST['days'];
+function wochentage($days){
 	$wd = "(";
 	$n = 0;
 
@@ -81,10 +80,10 @@ function wochentage($mo, $di, $mi, $do, $fr, $sa, $so){
 		}
 	}
 	$wd .= ")";
+    return $wd;
 } 
 
-function kategorien($Unterhaltung, $Natur, $Sport, $Kultur, $Wellness){
-	$days = $_POST['categories'];
+function kategorien($categories){
 	$cat = "(";
 	$n = 0;
 
@@ -96,16 +95,18 @@ function kategorien($Unterhaltung, $Natur, $Sport, $Kultur, $Wellness){
 		}
 	}
 	$cat .= ")";
+    return $cat;
 } 
 
 
 
+/*get result*/
+function aktivitaet_suchen($kategorien, $wochentage)
 $Aktivitaeten = "SELECT name, beschreibung, bild, MinPersonen, MaxPersonen
 	FROM Aktivitaeten
-		WHERE ($day)
+		WHERE ($days)
 		AND ($category) 
 		AND (MaxPersonen <= $people
 			 AND MinPersonen >= $people);";
-
 
 ?>

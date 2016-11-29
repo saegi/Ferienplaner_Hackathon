@@ -7,9 +7,6 @@
    }
 
 
-$wochensql = wochentage($mo, $di, $mi, $do, $fr, $sa, $so);
-$catsql = kategorien($Unterhaltung, $Natur, $Sport, $Kultur, $Wellness);
-
 
 
 
