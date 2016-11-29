@@ -6,10 +6,16 @@
 		$user_id = $_SESSION['id'];
    }
 
+if(isset($_POST['go-button'])){
+			$people = filter_data($_POST['people']);
+            $days = filter_data($_POST['day']);
+            $categories = filter_data($_POST['category']);
 
+$wochensql = wochentage($days);
+$catsql = kategorien($categories);
+$peoplesql = personen($people);
 
-
-
+}
 
 ?>
     <!DOCTYPE html>
