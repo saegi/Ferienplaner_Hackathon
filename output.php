@@ -7,9 +7,8 @@
    }
 
 if(isset($_POST['go-button'])){
-			$people = filter_data($_POST['people']);
-            $days = filter_data($_POST['day']);
-            $categories = filter_data($_POST['category']);
+            $days = filter_data($_POST['wochentage']);
+            $categories = filter_data($_POST['kategorien']);
 
 $wochensql = wochentage($days);
 $catsql = kategorien($categories);
