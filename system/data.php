@@ -84,7 +84,7 @@ function update_user($email, $password, $confirm_password, $username, $user_id){
 } 
 
 Sample SQL statement
-SELECT name, beschreibung, bild, kindpreis, normalpreis, seniorpreis 
+SELECT name, beschreibung, bild, MinPersonen, MaxPersonen
 	FROM Aktivitaeten
 		WHERE (sa = 1 OR so = 1)
 		AND (Wellness = 1 
