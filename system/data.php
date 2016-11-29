@@ -101,7 +101,7 @@ function kategorien($categories){
 
 
 /*get result*/
-function aktivitaet_suchen($kategorien, $wochentage,)
+function aktivitaet_suchen($kategorien, $wochentage,){
 $Aktivitaeten = "SELECT name, beschreibung, bild, MinPersonen, MaxPersonen
 	FROM Aktivitaeten
 		WHERE ($days)
@@ -109,5 +109,5 @@ $Aktivitaeten = "SELECT name, beschreibung, bild, MinPersonen, MaxPersonen
 		AND (MaxPersonen <= $people
 			 AND MinPersonen >= $people);";
 return get_result($Aktivitaeten);
-
+}
 ?>
