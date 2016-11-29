@@ -5,6 +5,43 @@ session_start();
   }else{
 		$user_id = $_SESSION['id'];
    }
+
+	
+
+if(isset($_POST['go-button'])){
+		if(!empty($_POST['days']) && !empty($_POST['categories']) && !empty($_POST['people'])){
+			
+            $people = $_POST['people'];
+                
+            $days = $_POST['days'];
+	$wd = "(";
+	$n = 0;
+
+	foreach($days as $day){
+		if ($n > 0){
+			$wd .= " OR ";
+		  $wd .= " $day = 1 ";
+		  $n ++;
+		}
+	}
+	$wd .= ")";
+} 
+                
+            $categories = $_POST['categories'];
+	$cat = "(";
+	$n = 0;
+
+	foreach($categories as $category){
+		if ($n > 0){
+			$cat .= " OR ";
+		  $cat .= " $category = 1 ";
+		  $n ++;
+		}
+	}
+	$cat .= ")";
+} 
+            
+                        
 ?>
 
     <!DOCTYPE html>
@@ -88,7 +125,7 @@ session_start();
             </div>
             <div class="row row-centered">
                 <div class="col-md-12">
-                    <input type="number" min="0">
+                    <input type="number" name="people" min="0">
                 </div>
             </div>
 
@@ -107,7 +144,7 @@ session_start();
                 </div>
                 <div class="col-md-4">
                     <a href="output.php" target="_self">
-                        <button type="button" class="btn btn-default">Weiter</button>
+                        <button type="button" name="go-button" class="btn btn-default">Weiter</button>
                 </div>
             </div>
         </div>
