@@ -1,51 +1,66 @@
 <?php
-	session_start();
-    if(!isset($_SESSION['id'])){
-	   header("Location:index.php");
-    }else{
-		$user_id = $_SESSION['id'];
-   }
+session_start();
+if ( !isset( $_SESSION[ 'id' ] ) ) {
+	header( "Location:index.php" );
+} else {
+	$user_id = $_SESSION[ 'id' ];
+}
+require_once( 'system/security.php' );
+require_once( 'system/data.php' );
 
-if(isset($_POST['go-button'])){
-            $days = filter_data($_POST['wochentage']);
-            $categories = filter_data($_POST['kategorien']);
 
-$wochensql = wochentage($days);
-$catsql = kategorien($categories);
-$peoplesql = personen($people);
-
+if ( isset( $_POST[ 'go-button' ] ) ) {
+	if( isset($_POST[ 'days' ])){
+		$days = $_POST[ 'days' ];
+		$wochensql = wochentage( $days );
+	}else{
+		$wochensql = "???";
+	}
+	
+	if( isset($_POST[ 'categories' ])){
+		$categories = $_POST[ 'categories' ];
+		$catsql = kategorien( $categories );
+	}else{
+		$catsql = "???";
+	}
+	
+	$people = $_POST[ 'people' ];
+	$akt = aktivitaet_suchen($catsql, $wochensql, $people);
 }
 
 ?>
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ihre Übersicht</title>
-    </head>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ihre Übersicht</title>
+</head>
 
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="thumbnail" style="margin:0px auto">
-                        <img src="bilder/web/sourceonestuff.jpg" alt="source_website">
-                        <div class="caption">
-                            <h3><?php echo $Aktivitaeten['name']; ?></h3>
-                            <p>
-                                <?php echo $Aktivitaeten['beschreibung']; ?>
-                            </p>
-                            <p><a href="http://www.sourceonestaff.com/" class="btn btn-primary" target="_blank" role="button">Speichern (nur eingeloggt)</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-centered">
-                <div class="col-md-4">
-                    <a href="logout.php" target="_self">
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="thumbnail" style="margin:0px auto">
+					<img src="bilder/web/sourceonestuff.jpg" alt="source_website">
+					<div class="caption">
+						<h3>
+							<?php echo $Aktivitaeten['name']; ?>
+						</h3>
+						<p>
+							<?php echo $Aktivitaeten['beschreibung']; ?>
+						</p>
+						<p><a href="http://www.sourceonestaff.com/" class="btn btn-primary" target="_blank" role="button">Speichern (nur eingeloggt)</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row row-centered">
+			<div class="col-md-4">
+				<a href="logout.php" target="_self">
                         <button type="button" class="btn btn-default">Logout</button>
                 </div>
                 <div class="col-md-4">

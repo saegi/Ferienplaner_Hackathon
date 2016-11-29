@@ -9,7 +9,7 @@ function get_db_connection(){
 
 function get_result($sql){
 	$db = get_db_connection();
-	/*echo $sql;*/
+	echo $sql;
 	$result = mysqli_query($db, $sql);
 	mysqli_close($db);
 	return $result;
@@ -75,9 +75,9 @@ function wochentage($days){
 	foreach($days as $day){
 		if ($n > 0){
 			$wd .= " OR ";
-		  $wd .= " $day = 1 ";
-		  $n ++;
 		}
+		$wd .= " $day = 1 ";
+		$n ++;
 	}
 	$wd .= ")";
     return $wd;
@@ -90,9 +90,9 @@ function kategorien($categories){
 	foreach($categories as $category){
 		if ($n > 0){
 			$cat .= " OR ";
-		  $cat .= " $category = 1 ";
-		  $n ++;
 		}
+		$cat .= " $category = 1 ";
+		$n ++;
 	}
 	$cat .= ")";
     return $cat;
@@ -100,11 +100,11 @@ function kategorien($categories){
 
 
 
-function aktivitaet_suchen($kategorien, $wochentage){
+function aktivitaet_suchen($category, $days, $people){
 $Aktivitaeten = "SELECT name, beschreibung, bild, MinPersonen, MaxPersonen
 	FROM Aktivitaeten
-		WHERE ($days)
-		AND ($category) 
+		WHERE $days
+		AND $category 
 		AND (MaxPersonen <= $people
 			 AND MinPersonen >= $people);";
 return get_result($Aktivitaeten);
