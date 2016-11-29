@@ -14,16 +14,16 @@ if ( isset( $_POST[ 'go-button' ] ) ) {
 		$days = $_POST[ 'days' ];
 		$wochensql = wochentage( $days );
 	}else{
-		$wochensql = "???";
+		$wochensql = "Bitte geben Sie mindestens einen Wochentag ein.";
 	}
-	
+
 	if( isset($_POST[ 'categories' ])){
 		$categories = $_POST[ 'categories' ];
 		$catsql = kategorien( $categories );
 	}else{
-		$catsql = "???";
+		$catsql = "Bitte geben Sie mindestens eine Kategorie ein.";
 	}
-	
+
 	$people = $_POST[ 'people' ];
 	$akt = aktivitaet_suchen($catsql, $wochensql, $people);
 }
