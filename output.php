@@ -5,6 +5,15 @@
     }else{
 		$user_id = $_SESSION['id'];
    }
+
+
+$wochensql = wochentage($mo, $di, $mi, $do, $fr, $sa, $so);
+$catsql = kategorien($Unterhaltung, $Natur, $Sport, $Kultur, $Wellness);
+
+
+
+
+
 ?>
     <!DOCTYPE html>
     <html>

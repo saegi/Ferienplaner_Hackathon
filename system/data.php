@@ -68,7 +68,7 @@ function update_user($email, $password, $confirm_password, $username, $user_id){
 /***********************/
 /* Days Berechnung */
 /***********************/
-/*function wochentage($mo, $di, $mi, $do, $fr, $sa, $so){
+function wochentage($mo, $di, $mi, $do, $fr, $sa, $so){
 	$days = $_POST['days'];
 	$wd = "(";
 	$n = 0;
@@ -83,15 +83,29 @@ function update_user($email, $password, $confirm_password, $username, $user_id){
 	$wd .= ")";
 } 
 
-Sample SQL statement
-SELECT name, beschreibung, bild, MinPersonen, MaxPersonen
-	FROM Aktivitaeten
-		WHERE (sa = 1 OR so = 1)
-		AND (Wellness = 1 
-			 OR Sport = 1) 
-		AND (MaxPersonen <= 50
-			 AND MinPersonen >= 1);
+function kategorien($Unterhaltung, $Natur, $Sport, $Kultur, $Wellness){
+	$days = $_POST['categories'];
+	$cat = "(";
+	$n = 0;
 
-*/
+	foreach($categories as $category){
+		if ($n > 0){
+			$cat .= " OR ";
+		  $cat .= " $category = 1 ";
+		  $n ++;
+		}
+	}
+	$cat .= ")";
+} 
+
+
+
+$Aktivitaeten = "SELECT name, beschreibung, bild, MinPersonen, MaxPersonen
+	FROM Aktivitaeten
+		WHERE ($day)
+		AND ($category) 
+		AND (MaxPersonen <= $people
+			 AND MinPersonen >= $people);";
+
 
 ?>

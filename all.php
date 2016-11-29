@@ -9,36 +9,14 @@ session_start();
 	
 
 if(isset($_POST['go-button'])){
-		if(!empty($_POST['days']) && !empty($_POST['categories']) && !empty($_POST['people'])){
+		if(!empty($_POST['day']) && !empty($_POST['category']) && !empty($_POST['people'])){
 			
             $people = $_POST['people'];
                 
-            $days = $_POST['days'];
-	$wd = "(";
-	$n = 0;
+            $days = $_POST['day'];
+	                
+            $categories = $_POST['category'];
 
-	foreach($days as $day){
-		if ($n > 0){
-			$wd .= " OR ";
-		  $wd .= " $day = 1 ";
-		  $n ++;
-		}
-	}
-	$wd .= ")";
-} 
-                
-            $categories = $_POST['categories'];
-	$cat = "(";
-	$n = 0;
-
-	foreach($categories as $category){
-		if ($n > 0){
-			$cat .= " OR ";
-		  $cat .= " $category = 1 ";
-		  $n ++;
-		}
-	}
-	$cat .= ")";
 } 
             
                         
