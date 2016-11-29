@@ -26,6 +26,7 @@ if ( isset( $_POST[ 'go-button' ] ) ) {
 
 	$people = $_POST[ 'people' ];
 	$akt = aktivitaet_suchen($catsql, $wochensql, $people);
+	$akt = mysqli_fetch_array($akt,MYSQLI_ASSOC);
 }
 
 ?>
@@ -47,10 +48,10 @@ if ( isset( $_POST[ 'go-button' ] ) ) {
 					<img src="bilder/web/sourceonestuff.jpg" alt="source_website">
 					<div class="caption">
 						<h3>
-							<?php echo $Aktivitaeten['name'];?>
+							<?php echo $akt['name'];?>
 						</h3>
 						<p>
-							<?php echo $Aktivitaeten['beschreibung'];?>
+							<?php echo $akt['beschreibung'];?>
 						</p>
 						<p><a href="http://www.sourceonestaff.com/" class="btn btn-primary" target="_blank" role="button">Speichern (nur eingeloggt)</a>
 						</p>
