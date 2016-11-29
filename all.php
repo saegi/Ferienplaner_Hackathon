@@ -8,17 +8,6 @@ session_start();
 
 	
 
-if(isset($_POST['go-button'])){
-		if(!empty($_POST['day']) && !empty($_POST['category']) && !empty($_POST['people'])){
-			
-            $people = $_POST['people'];
-                
-            $days = $_POST['day'];
-	                
-            $categories = $_POST['category'];
-
-} 
-}
                         
 ?>
 
