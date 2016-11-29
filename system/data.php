@@ -68,7 +68,7 @@ function update_user($email, $password, $confirm_password, $username, $user_id){
 /***********************/
 /* Days Berechnung */
 /***********************/
-function wochentage($mo, $di, $mi, $do, $fr, $sa, $so)
+function wochentage($mo, $di, $mi, $do, $fr, $sa, $so){
 	$days = $_POST['days'];
 	$wd = "(";
 	$n = 0;
@@ -81,7 +81,6 @@ function wochentage($mo, $di, $mi, $do, $fr, $sa, $so)
 		}
 	}
 	$wd .= ")";
-
-
+}
 
 ?>
