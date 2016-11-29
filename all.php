@@ -88,7 +88,7 @@ session_start();
             </div>
             <div class="row row-centered">
                 <div class="col-md-12">
-                    <input type="number">
+                    <input type="number" min="0">
                 </div>
             </div>
 
