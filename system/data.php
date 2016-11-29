@@ -101,13 +101,13 @@ function kategorien($categories){
 
 
 function aktivitaet_suchen($category, $days, $people){
-$Abfrage = "SELECT name, beschreibung, bild, MinPersonen, MaxPersonen
+$Aktivitaeten = "SELECT name, beschreibung, bild, MinPersonen, MaxPersonen
 	FROM Aktivitaeten
 		WHERE $days
 		AND $category
 		AND (MinPersonen <= $people
 			 AND MaxPersonen >= $people);";
-return get_result($Abfrage);
+return get_result($Aktivitaeten);
 }
 
 ?>
