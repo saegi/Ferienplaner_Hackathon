@@ -27,7 +27,7 @@ if ( isset( $_POST[ 'go-button' ] ) ) {
 	$people = $_POST[ 'people' ];
 	$akt = aktivitaet_suchen($catsql, $wochensql, $people);
 }
-
+$Aktivitaeten = mysqli_fetch_assoc($Abfrage);
 ?>
 <!DOCTYPE html>
 <html>

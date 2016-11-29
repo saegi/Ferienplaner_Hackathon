@@ -81,7 +81,7 @@ function wochentage($days){
 	}
 	$wd .= ")";
     return $wd;
-} 
+}
 
 function kategorien($categories){
 	$cat = "(";
@@ -96,18 +96,18 @@ function kategorien($categories){
 	}
 	$cat .= ")";
     return $cat;
-} 
+}
 
 
 
 function aktivitaet_suchen($category, $days, $people){
-$Aktivitaeten = "SELECT name, beschreibung, bild, MinPersonen, MaxPersonen
+$Abfrage = "SELECT name, beschreibung, bild, MinPersonen, MaxPersonen
 	FROM Aktivitaeten
 		WHERE $days
-		AND $category 
+		AND $category
 		AND (MinPersonen <= $people
 			 AND MaxPersonen >= $people);";
-return get_result($Aktivitaeten);
+return get_result($Abfrage);
 }
 
 ?>
