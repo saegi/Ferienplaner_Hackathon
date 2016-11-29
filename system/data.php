@@ -81,6 +81,17 @@ function update_user($email, $password, $confirm_password, $username, $user_id){
 		}
 	}
 	$wd .= ")";
-} */
+} 
+
+Sample SQL statement
+SELECT name, beschreibung, bild, kindpreis, normalpreis, seniorpreis 
+	FROM Aktivitaeten
+		WHERE (sa = 1 OR so = 1)
+		AND (Wellness = 1 
+			 OR Sport = 1) 
+		AND (MaxPersonen <= 50
+			 AND MinPersonen >= 1);
+
+*/
 
 ?>
