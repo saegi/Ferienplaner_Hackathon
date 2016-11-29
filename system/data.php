@@ -108,6 +108,6 @@ $Aktivitaeten = "SELECT name, beschreibung, bild, MinPersonen, MaxPersonen
 		AND ($category) 
 		AND (MaxPersonen <= $people
 			 AND MinPersonen >= $people);";
-return get_result($Aktivitaeten)
+return get_result($Aktivitaeten);
 
 ?>
