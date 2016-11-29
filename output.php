@@ -47,10 +47,10 @@ if ( isset( $_POST[ 'go-button' ] ) ) {
 					<img src="bilder/web/sourceonestuff.jpg" alt="source_website">
 					<div class="caption">
 						<h3>
-							<?php echo $Aktivitaeten['name']; ?>
+							<?php echo $Aktivitaeten['name'];?>
 						</h3>
 						<p>
-							<?php echo $Aktivitaeten['beschreibung']; ?>
+							<?php echo $Aktivitaeten['beschreibung'];?>
 						</p>
 						<p><a href="http://www.sourceonestaff.com/" class="btn btn-primary" target="_blank" role="button">Speichern (nur eingeloggt)</a>
 						</p>
