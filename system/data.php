@@ -9,7 +9,7 @@ function get_db_connection(){
 
 function get_result($sql){
 	$db = get_db_connection();
-	/* echo $sql; */
+	 /*echo $sql;*/
 	$result = mysqli_query($db, $sql);
 	mysqli_close($db);
 	return $result;
@@ -106,7 +106,8 @@ $Aktivitaeten = "SELECT name, beschreibung, bild, MinPersonen, MaxPersonen
 		WHERE $days
 		AND $category
 		AND (MinPersonen <= $people
-			 AND MaxPersonen >= $people);";
+			 AND MaxPersonen >= $people)
+		ORDER BY RAND();";
 return get_result($Aktivitaeten);
 }
 
