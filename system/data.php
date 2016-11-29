@@ -105,8 +105,8 @@ $Aktivitaeten = "SELECT name, beschreibung, bild, MinPersonen, MaxPersonen
 	FROM Aktivitaeten
 		WHERE $days
 		AND $category 
-		AND (MaxPersonen <= $people
-			 AND MinPersonen >= $people);";
+		AND (MinPersonen <= $people
+			 AND MaxPersonen >= $people);";
 return get_result($Aktivitaeten);
 }
 
