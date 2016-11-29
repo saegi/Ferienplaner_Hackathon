@@ -66,7 +66,7 @@ if ( isset( $_POST[ 'go-button' ] ) ) {
                 </div>
                 <div class="col-md-4">
                     
-                        <button type="button" name="go-button" action="output.php" method="post" class="btn btn-default">Neue Aktivität</button>
+                        <button type="button" name="go-button" class="btn btn-default">Neue Aktivität</button>
                 </div>
                 <div class="col-md-4">
                     <a href="index.php" target="_self">
