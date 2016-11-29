@@ -47,7 +47,7 @@ if ( isset( $_POST[ 'go-button' ] ) ) {
 					<img src="bilder/web/sourceonestuff.jpg" alt="source_website">
 					<div class="caption">
 						<h3>
-							<?php return get_result($Aktivitaeten);?>
+							<?php echo $Aktivitaeten['name'];?>
 						</h3>
 						<p>
 							<?php echo $Aktivitaeten['beschreibung']; ?>
