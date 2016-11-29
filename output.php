@@ -43,9 +43,9 @@ if ( isset( $_POST[ 'go-button' ] ) ) {
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-12">
 				<div class="thumbnail" style="margin:0px auto">
-					<img src="bilder/web/sourceonestuff.jpg" alt="source_website">
+					<img src="<?php echo $akt['bild'];?>" alt="<?php echo $akt['name'];?>">
 					<div class="caption">
 						<h3>
 							<?php echo $akt['name'];?>
@@ -53,7 +53,7 @@ if ( isset( $_POST[ 'go-button' ] ) ) {
 						<p>
 							<?php echo $akt['beschreibung'];?>
 						</p>
-						<p><a href="http://www.sourceonestaff.com/" class="btn btn-primary" target="_blank" role="button">Speichern (nur eingeloggt)</a>
+						<p><a href="#" class="btn btn-primary" target="_blank" role="button">Speichern (nur eingeloggt)</a>
 						</p>
 					</div>
 				</div>
