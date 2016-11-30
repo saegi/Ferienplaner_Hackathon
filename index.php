@@ -25,7 +25,7 @@
             </div>
             <div class="row row-centered">
                 <div class="col-md-12">
-                    <p>Willkommen beim Ferienplaner, und so gugus blabla</p>
+                    <h2>Willkommen beim Ferienplaner, geniessen Sie ihre Zeit.</h2>
                 </div>
             </div>
             <div class="row row-centered">
